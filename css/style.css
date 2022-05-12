@@ -133,6 +133,8 @@ header.active-hero nav .mobile-links {
   }
   header.active-hero nav .desktop-links ul {
     background-color: #000a;
+    padding: 0.5rem;
+    border-radius: 5px;
   }
   header.active-hero nav .desktop-links ul li a {
     color: #fff;
@@ -144,7 +146,7 @@ header.active-hero nav .mobile-links {
   width: 100%;
   padding: 10vh 5vw;
   background-image: url(../img/tingey-injury-law-firm-nSpj-Z12lX0-unsplash.jpg);
-  background-image: url(../img/patrick-fore-H5Lf0nGyetk-unsplash.jpg);
+  background-image: url(../img/henry-be-TCsCykbwSJw-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -158,19 +160,22 @@ header.active-hero nav .mobile-links {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   z-index: -1;
 }
 .hero .hero-title {
   position: sticky;
   top: 30vh;
   color: #fff;
+  text-transform: capitalize;
 }
 .hero .hero-title h1 {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 .hero .hero-title p {
   color: #eee;
+  line-height: 1.5;
 }
 .hero .hero-title .cta {
   margin: 2rem 0 0;
@@ -235,6 +240,7 @@ header.active-hero nav .mobile-links {
   }
   .hero .hero-title h1 {
     font-size: 3rem;
+    margin-bottom: 5vh;
   }
   .hero .hero-title p {
     font-size: 1.5rem;
@@ -272,6 +278,7 @@ header.active-hero nav .mobile-links {
   min-height: 100vh;
   isolation: isolate;
   position: relative;
+  overflow-x: hidden;
 }
 .container::after {
   content: "";

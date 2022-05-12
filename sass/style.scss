@@ -18,6 +18,7 @@
     min-height: 100vh;
     isolation: isolate;
     position: relative;
+    overflow-x: hidden;
 
     // CONTAINER OVERLAY
     &::after {
