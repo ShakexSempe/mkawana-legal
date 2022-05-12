@@ -18,6 +18,7 @@ header {
   header {
     height: 10vh;
     background: #fff;
+    padding: 0 5vw;
   }
 }
 header .logo {
@@ -250,6 +251,22 @@ header.active-hero nav .mobile-links {
   }
 }
 
+.main {
+  min-height: 100vh;
+  background-color: #fff;
+  scroll-snap-type: y mandatory;
+}
+.main .section {
+  min-height: 100vh;
+  padding: 5vh 5vw;
+  border: 2px solid #a16e14;
+  scroll-snap-align: end;
+}
+.main .section .section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .toggle {
   cursor: pointer;
   text-transform: capitalize;
@@ -263,13 +280,43 @@ header.active-hero nav .mobile-links {
   letter-spacing: normal;
 }
 
+.home-btn {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  display: grid;
+  place-items: center;
+  transform: translateY(20vh);
+  transition: 1s;
+}
+.home-btn a {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: #a16e14;
+  border: 1px solid #000;
+  outline: 1px solid #ead2a1;
+}
+.home-btn a:hover {
+  background-color: #000;
+  color: #ead2a1;
+}
+.home-btn.active {
+  transform: translateY(0);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Mukta", sans-serif;
   scroll-behavior: smooth;
-  scroll-padding-top: 10vh;
+  scroll-padding-top: 7vh;
+}
+@media (min-width: 768px) {
+  * {
+    scroll-padding-top: 10vh;
+  }
 }
 
 .container {
@@ -291,12 +338,6 @@ header.active-hero nav .mobile-links {
 }
 .container.active::after {
   right: 0vw;
-}
-.container main {
-  min-height: 100vh;
-  background-color: #fff;
-  border: 2px solid #000;
-  padding: 5vh 5vw;
 }
 
 /*# sourceMappingURL=style.css.map */

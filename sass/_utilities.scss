@@ -11,3 +11,30 @@
         letter-spacing: normal;
     }
 }
+
+.home-btn {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    display: grid;
+    place-items: center;
+    transform: translateY(20vh);
+    transition: 1s;
+    a {
+        text-decoration: none;
+        border-radius: 5px;
+        padding: .5rem;
+        color: $brand-gold;
+        border: 1px solid #000;
+        outline: 1px solid #ead2a1;
+        // outline-offset: -2px;
+        &:hover {
+            background-color: #000;
+            color: #ead2a1;
+        }
+    }
+
+    &.active {
+        transform: translateY(0);
+    }
+}

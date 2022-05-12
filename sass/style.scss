@@ -1,5 +1,6 @@
 @import 'header';
 @import 'hero';
+@import 'main';
 @import 'variables';
 @import 'utilities';
 
@@ -9,7 +10,10 @@
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
     scroll-behavior: smooth;
-    scroll-padding-top: 10vh ;
+    scroll-padding-top: 7vh;
+    @media (min-width: 768px){
+    scroll-padding-top: 10vh;
+    }
 }
 
 .container {
@@ -35,10 +39,5 @@
             right: 00vw;
         }
     }
-    main {
-        min-height: 100vh;
-        background-color: #fff;
-        border: 2px solid #000;
-        padding: 5vh 5vw;
-    }
+    
 }

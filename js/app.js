@@ -1,8 +1,10 @@
-// TOGGLE VARIABLES
+// VARIABLES
 const toggle = document.querySelector('.toggle');
 const mobileMenu = document.querySelector('.mobile-links');
 const header = document.querySelector('.header');
 const container = document.querySelector('.container');
+const homeBtn = document.querySelector('.home-btn');
+// const navLinks = document.query
 console.log(mobileMenu);
 
 toggle.addEventListener("click", () => {
@@ -22,10 +24,12 @@ const heroObserver = new IntersectionObserver(
         entries.forEach(entry => {
             if(!entry.isIntersecting){
                 console.log("hero NOT Intersecting");
-                header.classList.remove("active-hero")
+                header.classList.remove("active-hero");
+                homeBtn.classList.add("active");
             } else {
-                console.log('hero is intersecting');
-                header.classList.add("active-hero")
+                console.log("hero is intersecting");
+                header.classList.add("active-hero");
+                homeBtn.classList.remove("active");
             }
         })
     }, heroOptions
