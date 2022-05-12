@@ -273,6 +273,18 @@ header.active-hero nav .mobile-links {
   isolation: isolate;
   position: relative;
 }
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100vw;
+  width: 100%;
+  height: 100%;
+  background: #000a;
+}
+.container.active::after {
+  right: 0vw;
+}
 .container main {
   min-height: 100vh;
   background-color: #fff;

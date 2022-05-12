@@ -2,12 +2,14 @@
 const toggle = document.querySelector('.toggle');
 const mobileMenu = document.querySelector('.mobile-links');
 const header = document.querySelector('.header');
+const container = document.querySelector('.container');
 console.log(mobileMenu);
 
 toggle.addEventListener("click", () => {
     mobileMenu.classList.toggle("active-menu");
     toggle.classList.toggle("active-toggle");
-    header.classList.remove("active-hero")
+    header.classList.remove("active-hero");
+    container.classList.toggle("active");
 });
 
 
