@@ -16,6 +16,11 @@
     background-color: #f4f4f4;
     width: 100%;
     min-height: 100vh;
+    isolation: isolate;
+    position: relative;
+
+    // CONTAINER OVERLAY
+    
 
     main {
         min-height: 100vh;

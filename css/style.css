@@ -250,7 +250,7 @@ header.active-hero nav .mobile-links {
   text-transform: uppercase;
   position: absolute;
   right: 5vw;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.25rem;
   transition: 0.2s;
 }
 .toggle.active-toggle {
@@ -270,6 +270,8 @@ header.active-hero nav .mobile-links {
   background-color: #f4f4f4;
   width: 100%;
   min-height: 100vh;
+  isolation: isolate;
+  position: relative;
 }
 .container main {
   min-height: 100vh;
