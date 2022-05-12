@@ -1,4 +1,5 @@
 @import 'header';
+@import 'hero';
 @import 'variables';
 @import 'utilities';
 
@@ -12,11 +13,6 @@
     background-color: #f4f4f4;
     width: 100%;
     min-height: 100vh;
-
-    .hero {
-        height: 100vh;
-        background-color: $brand-gold;
-    }
 
     main {
         min-height: 100vh;
