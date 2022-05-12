@@ -14,6 +14,7 @@ header {
     position: relative;
     position: fixed;
     top: 0;
+    z-index: 5;
     transition: .5s;
 
     .logo {
