@@ -1,20 +1,35 @@
 // VARIABLES
 const toggle = document.querySelector('.toggle');
+const logo = document.querySelector('.logo');
 const mobileMenu = document.querySelector('.mobile-links');
 const header = document.querySelector('.header');
 const container = document.querySelector('.container');
 const homeBtn = document.querySelector('.home-btn');
-// const navLinks = document.query
-console.log(mobileMenu);
+const navLinks = document.querySelectorAll("header .mobile-links ul li a");
+console.log(logo);
 
 toggle.addEventListener("click", () => {
-    mobileMenu.classList.toggle("active-menu");
-    toggle.classList.toggle("active-toggle");
     header.classList.remove("active-hero");
+    toggle.classList.toggle("active-toggle");
+    mobileMenu.classList.toggle("active-menu");
     container.classList.toggle("active");
 });
 
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.remove("active-menu");
+        container.classList.remove("active");
+        toggle.classList.remove("active-toggle");
+    });
+});
 
+logo.addEventListener("click", () => {
+    mobileMenu.classList.remove("active-menu");
+        container.classList.remove("active");
+        toggle.classList.remove("active-toggle");
+})
+
+// HERO OBSERVER
 const hero = document.querySelector('.hero');
 const heroOptions = {
     rootMargin: "-90% 0px 0px 0px",
