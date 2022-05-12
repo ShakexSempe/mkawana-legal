@@ -4,13 +4,11 @@
     // border: 2px solid blue;
     min-height: 100vh;
     background-color: #fff;
-    scroll-snap-type: y mandatory;
 
     .section {
         min-height: 100vh;
         padding: 5vh 5vw;
         border: 2px solid $brand-gold;
-        scroll-snap-align: end;
 
         .section-title {
             text-align: center;
