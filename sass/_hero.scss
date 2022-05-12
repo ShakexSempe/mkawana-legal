@@ -59,6 +59,7 @@
                 text-transform: uppercase;
                 color: #fff;
                 text-decoration: none;
+                transition: .2s;
                 position: relative;
                 letter-spacing: .05rem;
                 isolation: isolate;
@@ -77,14 +78,17 @@
                 }
                 &::before {
                     background: $btn-cta;
+                    box-shadow: $box-shadow-sm;
                 }
                 &::after {
                     background: $btn-cta-hover;
+                    box-shadow: $box-shadow-sm-hover;
                     opacity: 0;
                 }
                 // CTA BTN HOVER STATE
                 &:hover {
                     letter-spacing: normal;
+                    transform: scale(.99);
                     &::before {opacity: 0;}
                     &::after {opacity: 1;}
                 }

@@ -194,6 +194,7 @@ header.active-hero nav .mobile-links {
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
+  transition: 0.2s;
   position: relative;
   letter-spacing: 0.05rem;
   isolation: isolate;
@@ -212,13 +213,16 @@ header.active-hero nav .mobile-links {
 }
 .hero .hero-title .cta a::before {
   background: linear-gradient(0deg, #5b3e0b, #e39a1c);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.4);
 }
 .hero .hero-title .cta a::after {
   background: linear-gradient(0deg, #e39a1c, #5b3e0b);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.4), inset -2px -2px 2px rgba(255, 255, 255, 0.4);
   opacity: 0;
 }
 .hero .hero-title .cta a:hover {
   letter-spacing: normal;
+  transform: scale(0.99);
 }
 .hero .hero-title .cta a:hover::before {
   opacity: 0;
