@@ -4,4 +4,10 @@
     text-transform: uppercase;
     position: absolute;
     right: 5vw;
+    letter-spacing: .1rem;
+    transition: .2s;
+
+    &.active-toggle {
+        letter-spacing: normal;
+    }
 }

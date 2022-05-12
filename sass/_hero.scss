@@ -1,0 +1,15 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    // background-color: #f4f4f4;
+    background-image: url(../img/tingey-injury-law-firm-nSpj-Z12lX0-unsplash.jpg);
+    background-image: url(../img/tingey-injury-law-firm-nSpj-Z12lX0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // DESKTOP HERO
+    @media(min-width: 768px) {
+        background-image: url(../img/sebastian-pichler-bAQH53VquTc-unsplash.jpg);
+        
+    }
+}

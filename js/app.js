@@ -1,14 +1,16 @@
 // TOGGLE VARIABLES
 const toggle = document.querySelector('.toggle');
 const mobileMenu = document.querySelector('.mobile-links');
+const header = document.querySelector('.header');
 console.log(mobileMenu);
 
 toggle.addEventListener("click", () => {
     mobileMenu.classList.toggle("active-menu");
+    toggle.classList.toggle("active-toggle");
+    header.classList.remove("active-hero")
 });
 
 
-const header = document.querySelector('.header');
 const hero = document.querySelector('.hero');
 const heroOptions = {
     rootMargin: "-90% 0px 0px 0px",
