@@ -121,7 +121,7 @@ header nav ul li a {
   }
 }
 header.active-hero {
-  height: 20vh;
+  height: 15vh;
 }
 header.active-hero nav .mobile-links {
   top: 20vh;
@@ -130,9 +130,9 @@ header.active-hero nav .mobile-links {
 .hero {
   height: 100vh;
   width: 100%;
-  padding: 0 5vw;
+  padding: 10vh 5vw;
   background-image: url(../img/tingey-injury-law-firm-nSpj-Z12lX0-unsplash.jpg);
-  background-image: url(../img/tingey-injury-law-firm-nSpj-Z12lX0-unsplash.jpg);
+  background-image: url(../img/patrick-fore-H5Lf0nGyetk-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -146,7 +146,7 @@ header.active-hero nav .mobile-links {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000a;
+  background: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 @media (min-width: 768px) {
@@ -156,14 +156,17 @@ header.active-hero nav .mobile-links {
 }
 .hero .hero-title {
   position: sticky;
-  top: 30vh;
+  top: 35vh;
   color: #fff;
 }
+.hero .hero-title h1 {
+  font-size: 1.7rem;
+}
 .hero .hero-title p {
-  color: #dddd;
+  color: #eee;
 }
 .hero .hero-title .cta {
-  margin: 1rem 0;
+  margin: 2rem 0 0;
 }
 .hero .hero-title .cta a {
   display: block;
@@ -195,6 +198,8 @@ header.active-hero nav .mobile-links {
   padding: 0;
   box-sizing: border-box;
   font-family: "Mukta", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10vh;
 }
 
 .container {
