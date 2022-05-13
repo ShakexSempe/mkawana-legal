@@ -1,5 +1,5 @@
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 10vh 5vw;
     // background-color: #f4f4f4;
@@ -44,64 +44,6 @@
             color: #eee;
             line-height: 1.5;
         }
-        .cta {
-            // border: 2px solid #fff;
-            margin: 2rem 0 0;
-            a {
-                display: block;
-                width: 10rem;
-                text-align: center;
-                font-size: 1rem;
-                border: 1px solid #000;
-                padding: .5rem 1rem;
-                border-radius: 5px;
-                background: #000;
-                text-transform: capitalize;
-                text-transform: uppercase;
-                color: #fff;
-                text-decoration: none;
-                transition: .2s;
-                position: relative;
-                letter-spacing: .05rem;
-                isolation: isolate;
-
-                &::before, &::after {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 5px;
-                    transition: .25s;
-                    z-index: -1;
-                    background-color: $brand-gold;
-                }
-                &::before {
-                    background: $btn-cta;
-                    box-shadow: $box-shadow-sm;
-                }
-                &::after {
-                    background: $btn-cta-hover;
-                    box-shadow: $box-shadow-sm-hover;
-                    opacity: 0;
-                }
-                // CTA BTN HOVER STATE
-                &:hover {
-                    letter-spacing: normal;
-                    transform: scale(.99);
-                    &::before {opacity: 0;}
-                    &::after {opacity: 1;}
-                }
-                // CTA BTN ACTIVE STATE
-
-                &:active {
-                    transform: scale(.97);
-                    &::before {opacity: 0;}
-                    &::after {opacity: 1;}
-                }
-            }
-        }
 
         @media (min-width: 678px) {
             text-align: center;
@@ -115,9 +57,7 @@
             }
             .cta {
                 a {
-                    width: 15rem;
-                    font-size: 1.1rem;
-                    margin: 0 auto;
+                  
                 }
             }
         }

@@ -4,9 +4,10 @@ const logo = document.querySelector('.logo');
 const mobileMenu = document.querySelector('.mobile-links');
 const header = document.querySelector('.header');
 const container = document.querySelector('.container');
+const main = document.querySelector('.main');
 const homeBtn = document.querySelector('.home-btn');
 const navLinks = document.querySelectorAll("header .mobile-links ul li a");
-console.log(logo);
+console.log(main);
 
 toggle.addEventListener("click", () => {
     header.classList.remove("active-hero");
@@ -41,6 +42,7 @@ const heroObserver = new IntersectionObserver(
                 console.log("hero NOT Intersecting");
                 header.classList.remove("active-hero");
                 homeBtn.classList.add("active");
+
             } else {
                 console.log("hero is intersecting");
                 header.classList.add("active-hero");
@@ -50,6 +52,25 @@ const heroObserver = new IntersectionObserver(
     }, heroOptions
 );
 heroObserver.observe(hero);
+
+// MAIN OBSERVER
+// const mainOptions = {
+//     rootMargin: "50% 0px 0px 0px",
+// }
+// const mainObserver = new IntersectionObserver(
+//     function(entries, mainObserver){
+//         entries.forEach(entry => {
+//             if(!entry.isIntersecting){
+//                 console.log("main NOT Intersecting");
+//                 homeBtn.classList.remove("active");
+//             } else {
+//                 console.log("main is intersecting");
+//                 homeBtn.classList.add("active");
+//             }
+//         })
+//     }, mainOptions
+// );
+// mainObserver.observe(main);
 
 // CONTENT IO
 const ioItem = document.querySelectorAll('.io-item');

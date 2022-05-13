@@ -3,6 +3,9 @@
         // border: 1px solid $brand-gold;
 
         p {
+            &:nth-child(1){
+                margin-bottom: 1rem;
+            }
             span {
                 font-size: 1.5rem;
                 background-color: #000;
@@ -11,6 +14,27 @@
                 border-radius: 5px;
                 float: left;
                     margin-right: 0.1em;
+            }
+
+            a {
+                color: $brand-gold;
+                text-transform: capitalize;
+            }
+        }
+
+        .cta {
+            display: block;
+            width: 10rem;
+            position: relative;
+        }
+        // DESKTOP ARTICLE
+        @media (min-width: 1024px){
+            p {
+                font-size: 1.25rem;
+
+                span {
+                    font-size: 2.5rem;
+                }
             }
         }
     }
