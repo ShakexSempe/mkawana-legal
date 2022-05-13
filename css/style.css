@@ -14,7 +14,7 @@ header {
   z-index: 5;
   transition: 0.5s;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header {
     height: 10vh;
     background: #fff;
@@ -32,7 +32,7 @@ header .logo img {
   object-fit: contain;
   object-position: left;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header .logo {
     width: 15rem;
   }
@@ -48,7 +48,7 @@ header nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   header nav .desktop-links {
     display: none;
   }
@@ -81,7 +81,7 @@ header nav ul li a {
     transition: 0.5s;
   }
   header nav .mobile-links.active-menu {
-    right: -40vw;
+    right: -20vw;
   }
   header nav .mobile-links.active-menu ul li {
     transform: translateX(0);
@@ -97,7 +97,7 @@ header nav ul li a {
     transition-delay: 0.6s;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header ul {
     width: 20rem;
     display: flex;
@@ -142,17 +142,16 @@ header nav ul li a {
   }
 }
 header.active-hero {
-  height: 15vh;
+  height: 30vh;
 }
 header.active-hero nav .mobile-links {
-  top: 15vh;
+  top: 30vh;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header.active-hero {
     background-color: transparent;
   }
   header.active-hero nav .desktop-links ul {
-    background-color: #000a;
     padding: 0.5rem;
     border-radius: 5px;
   }
@@ -270,6 +269,8 @@ header.active-hero nav .mobile-links {
     font-size: 1.5rem;
   }
   .hero .hero-title .cta a {
+    width: 15rem;
+    font-size: 1.1rem;
     margin: 0 auto;
   }
 }
