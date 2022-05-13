@@ -190,7 +190,8 @@ header.active-hero nav .mobile-links {
 }
 .hero .hero-title h1 {
   font-size: 2.2rem;
-  margin-bottom: 1rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
 }
 .hero .hero-title p {
   color: #eee;
