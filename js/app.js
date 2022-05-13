@@ -50,3 +50,27 @@ const heroObserver = new IntersectionObserver(
     }, heroOptions
 );
 heroObserver.observe(hero);
+
+// CONTENT IO
+const ioItem = document.querySelectorAll('.io-item');
+console.log(ioItem);
+itemOptions= {
+    rootMargin: '0px 0px 0px 0px',
+};
+
+ioItem.forEach(item => {
+    const itemObserver = new IntersectionObserver(
+        function(entries, itemObserver) {
+            entries.forEach(entry => {
+                if(!entry.isIntersecting){
+                    console.log("entry NOT io");
+                    item.classList.remove("active-item"); 
+                } else {
+                    console.log("entry IS io")
+                    item.classList.add("active-item");
+                }
+            });
+        }, itemOptions
+    );
+    itemObserver.observe(item);
+});

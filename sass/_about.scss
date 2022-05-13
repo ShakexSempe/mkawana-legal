@@ -1,0 +1,17 @@
+.about {
+    .about-article {
+        // border: 1px solid $brand-gold;
+
+        p {
+            span {
+                font-size: 1.5rem;
+                background-color: #000;
+                padding: .2rem;
+                color: #ead2a1;
+                border-radius: 5px;
+                float: left;
+                    margin-right: 0.1em;
+            }
+        }
+    }
+}
