@@ -5,6 +5,7 @@
     // background-color: #f4f4f4;
     background-image: url(../img/tingey-injury-law-firm-nSpj-Z12lX0-unsplash.jpg);
     background-image: url(../img/henry-be-TCsCykbwSJw-unsplash.jpg);
+    background-image: url(../img/gavel.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,13 +19,12 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: hsla(0, 0%, 0%, 0.200);
+        background: hsla(0, 0%, 0%, 0.350);
         z-index: -1;
     }
     // DESKTOP HERO
     @media(min-width: 768px) {
-        // background-image: url(../img/sebastian-pichler-bAQH53VquTc-unsplash.jpg);
-        
+        background-image: url(../img/henry-be-TCsCykbwSJw-unsplash.jpg);
     }
 
     .hero-title {
@@ -35,8 +35,8 @@
         
 
         h1 {
-            font-size: 2.2rem;
-            line-height: 1;
+            font-size: 2.3rem;
+            line-height: 1.2;
             margin-bottom: 1.5rem;
         }
         
