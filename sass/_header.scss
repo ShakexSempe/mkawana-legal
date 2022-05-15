@@ -72,9 +72,12 @@ header {
                 background-color: $brand-dark;
                 top: 7vh;
                 right: -100vw;
+                right: 0;
                 width: 100%;
-                height: 100vh;
+                height: 0vh;
+                border-bottom: 2px solid $brand-gold;
                 transition: .5s;
+                overflow: hidden;
 
             ul {
                 border: 2px solid #000;
@@ -100,7 +103,10 @@ header {
             }
 
             &.active-menu {
-                right: -20vw;
+                // right: -20vw;
+                // background-color: pink;
+                top: 7vh;
+                height: 50vh;
                 ul {
                     li {
                         transform: translateX(0);
@@ -181,7 +187,7 @@ header {
         height: 20vh;
         nav {
             .mobile-links {
-                top: 25vh;
+                top: 20vh;
             }
         }
 
