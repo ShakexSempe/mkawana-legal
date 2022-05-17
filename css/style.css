@@ -282,6 +282,7 @@ header.active-hero nav .mobile-links {
 }
 .services .services-container .service-item {
   border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid #a16e14;
   border-radius: 10px;
   padding: 1rem 0;
   text-align: center;
