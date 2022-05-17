@@ -289,12 +289,25 @@ header.active-hero nav .mobile-links {
   height: 300px;
   height: auto;
 }
-.services .services-container .service-item .service-title img {
-  border-radius: 5px;
+.services .services-container .service-item .service-title figure {
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+.services .services-container .service-item .service-title figure img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
   padding: 0.5rem;
-  width: 7rem;
-  height: 7rem;
-  margin: 1rem auto;
+}
+@media (min-width: 768px) {
+  .services .services-container .service-item .service-title figure {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
 }
 .services .services-container .service-item .service-title h3 {
   text-transform: uppercase;

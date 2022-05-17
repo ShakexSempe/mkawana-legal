@@ -18,14 +18,35 @@
             // place-items: center;
 
             .service-title {
-                img {
-                    // border: 1px solid #000;
-                    border-radius: 5px;
-                    padding: .5rem;
-                    width: 7rem;
-                    height: 7rem;
-                    margin: 1rem auto;
+                figure {
+                    // border: 1px solid red;
+                    width: 5rem;
+                    height: 5rem;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    display: grid;
+                    place-items: center;
+
+                    img {
+                        object-fit: contain;
+                        height: 100%;
+                        width: 100%;
+                        padding: .5rem;
+                    }
+
+                    @media (min-width: 768px){
+                        width: 6.5rem;
+                        height: 6.5rem;
+                    }
                 }
+                // img {
+                //     // border: 1px solid #000;
+                //     border-radius: 5px;
+                //     padding: .5rem;
+                //     width: 7rem;
+                //     height: 7rem;
+                //     margin: 1rem auto;
+                // }
 
                 h3 {
                     text-transform: uppercase;
