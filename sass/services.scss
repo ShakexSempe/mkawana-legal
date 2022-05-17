@@ -7,11 +7,10 @@
         gap: 5vh;
         // MOBILE CONTAINER
         .service-item {
-            border: 1px solid rgba(0, 0, 0, .200);
-            border: 1px solid $brand-gold;
-            border-radius: 10px;
+            // border: 1px solid $brand-gold;
+            border-bottom: 2px solid $brand-gold;
+            border-bottom-right-radius: 10px;
             padding: 1rem 0;
-            text-align: center;
             height: 300px;
             height: auto;
             // display: grid;
@@ -23,9 +22,9 @@
                     width: 5rem;
                     height: 5rem;
                     overflow: hidden;
-                    margin: 0 auto;
                     display: grid;
                     place-items: center;
+                    margin: 1rem 0;
 
                     img {
                         object-fit: contain;
@@ -60,7 +59,12 @@
                 }
                 // CTA MARGIN AUTO = CENTER ALIGNED
                 a {
-                    margin: 0 auto;
+                    // margin: 0 auto;
+                }
+                @media (min-width: 768px){
+                    a {
+                        margin: 0 auto;
+                    }
                 }
             }
         }
@@ -68,8 +72,20 @@
         // TABLET CONTAINER 
         @media (min-width: 768px){
             // border: 1px solid green;
+            text-align: center;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
+
+            .service-item {
+                border: 1px solid $brand-gold;
+                border-radius: 10px;
+
+                .service-title {
+                    figure {
+                    margin: 0 auto;
+                    }
+                }
+            }
         }
 
         // DESKTOP CONTAINER 
