@@ -420,6 +420,26 @@ header.active-hero nav .mobile-links {
   }
 }
 
+.contact .contact-info .contact-item {
+  border-bottom: 2px solid #a16e14;
+  border-top: 2px solid #a16e14;
+  border-radius: 10px;
+  margin: 5vh 0;
+  padding: 1rem 0;
+}
+.contact .contact-info .contact-item h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.contact .contact-info .contact-item a {
+  color: #a16e14;
+  text-transform: capitalize;
+}
+.contact .contact-info .contact-item a i {
+  color: #a16e14;
+  width: 1.5rem;
+}
+
 .toggle {
   cursor: pointer;
   text-transform: capitalize;
