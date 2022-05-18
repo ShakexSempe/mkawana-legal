@@ -113,12 +113,26 @@ header {
                     }
                 }
             }
-
+            .social-links {
+                // border: 2px solid red;
+                display: flex;
+                flex-direction: column;
+                margin: 0 5vw;
+                overflow: hidden;
+                a {
+                    color: $brand-gold;
+                    transform: translateY(2rem);
+                    opacity: 0;
+                    i {
+                        width: 1.5rem;
+                    }
+                }
+            }
             &.active-menu {
                 // right: -20vw;
                 // background-color: pink;
                 top: 7vh;
-                height: 50vh;
+                height: 65vh;
                 ul {
                     li {
                         transform: translateX(0);
@@ -131,6 +145,24 @@ header {
                         }
                         &:nth-child(3) {
                             transition-delay: .4s;
+                        }
+                    }
+                }
+
+                .social-links {
+                    a {
+                        opacity: 1;
+                        transform: translateY(0);
+                        transition: 1s;
+
+                        &:nth-child(1){
+                            transition-delay: .4s;
+                        }
+                        &:nth-child(2){
+                            transition-delay: .5s;
+                        }
+                        &:nth-child(3){
+                            transition-delay: .6s;
                         }
                     }
                 }
