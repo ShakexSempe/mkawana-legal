@@ -8,16 +8,39 @@
         // MOBILE CONTAINER
         .service-item {
             // border: 1px solid $brand-gold;
-            border-bottom: 2px solid $brand-gold;
-            border-top: 2px solid $brand-gold;
-            border-bottom-right-radius: 10px;
-            border-top-right-radius: 10px;
-            padding: 1rem 0;
+            // border-bottom: 2px solid $brand-gold;
+            // border-top: 2px solid $brand-gold;
+            // border-bottom-right-radius: 10px;
+            // border-top-right-radius: 10px;
+            padding: 1rem .5rem;
             height: 300px;
             height: auto;
-            // display: grid;
-            // place-items: center;
-
+            position: relative;
+            @media (max-width: 768px){
+            // PSEUDO BORDER
+            &::before , &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: .5s;
+                // border-radius: 10px;
+            }
+            &::before {
+                border-bottom: 2px solid $brand-gold;
+                border-top: 2px solid $brand-gold;
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            &::after {
+                // border: 2px solid $brand-gold;
+                border-radius: 10px;
+                border-right: 1px solid $brand-gold;
+                opacity: 0;
+            }
+        }
             .service-title {
                 figure {
                     // border: 1px solid red;
@@ -58,6 +81,10 @@
             .content {
                 p {
                     text-transform: capitalize;
+                    border-bottom: 1px solid $brand-gold;
+                    height: 0;
+                    transition: .5s;
+                    overflow: hidden;
                 }
                 // CTA MARGIN AUTO = CENTER ALIGNED
                 a {
@@ -66,6 +93,16 @@
                 @media (min-width: 768px){
                     a {
                         margin: 0 auto;
+                    }
+                }
+            }
+            // ITEM BORDER ON HOVER
+            &:hover {
+                // &::before {opacity: 0;}
+                &::after {opacity: 1;}
+                .content {
+                    p {
+                        height: 10vh;
                     }
                 }
             }
