@@ -16,6 +16,7 @@
             height: 350px;
             height: auto;
             position: relative;
+            isolation: isolate;
             @media (max-width: 768px){
             // PSEUDO BORDER
             &::before , &::after {
@@ -26,6 +27,7 @@
                 width: 100%;
                 height: 100%;
                 transition: .5s;
+                z-index: -1;
                 // border-radius: 10px;
             }
             &::before {

@@ -325,6 +325,7 @@ header.active-hero nav .mobile-links {
   height: 350px;
   height: auto;
   position: relative;
+  isolation: isolate;
 }
 @media (max-width: 768px) {
   .services .services-container .service-item::before, .services .services-container .service-item::after {
@@ -335,6 +336,7 @@ header.active-hero nav .mobile-links {
     width: 100%;
     height: 100%;
     transition: 0.5s;
+    z-index: -1;
   }
   .services .services-container .service-item::before {
     border-bottom: 2px solid #a16e14;
