@@ -101,12 +101,14 @@ header nav ul li a {
     overflow: hidden;
   }
   header nav .mobile-links .social-links a {
-    color: #a16e14;
+    color: #ead2a1;
     transform: translateY(2rem);
     opacity: 0;
+    text-decoration: none;
   }
   header nav .mobile-links .social-links a i {
     width: 1.5rem;
+    color: #a16e14;
   }
   header nav .mobile-links.active-menu {
     top: 7vh;
@@ -438,6 +440,12 @@ header.active-hero nav .mobile-links {
 .contact .contact-info .contact-item a i {
   color: #a16e14;
   width: 1.5rem;
+}
+
+footer {
+  min-height: 50vh;
+  background: #010304;
+  background: linear-gradient(0deg, #000, #161616);
 }
 
 .toggle {

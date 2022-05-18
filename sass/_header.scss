@@ -120,11 +120,13 @@ header {
                 margin: 0 5vw;
                 overflow: hidden;
                 a {
-                    color: $brand-gold;
+                    color: #ead2a1;
                     transform: translateY(2rem);
                     opacity: 0;
+                    text-decoration: none;
                     i {
                         width: 1.5rem;
+                        color: $brand-gold;
                     }
                 }
             }
