@@ -278,11 +278,13 @@ header.active-hero nav .mobile-links {
 
 .services .services-container {
   display: grid;
-  gap: 5vh;
+  gap: 10vh;
 }
 .services .services-container .service-item {
   border-bottom: 2px solid #a16e14;
+  border-top: 2px solid #a16e14;
   border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
   padding: 1rem 0;
   height: 300px;
   height: auto;

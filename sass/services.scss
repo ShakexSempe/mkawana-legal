@@ -4,12 +4,14 @@
     .services-container {
         // border: 1px solid red;
         display: grid;
-        gap: 5vh;
+        gap: 10vh;
         // MOBILE CONTAINER
         .service-item {
             // border: 1px solid $brand-gold;
             border-bottom: 2px solid $brand-gold;
+            border-top: 2px solid $brand-gold;
             border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
             padding: 1rem 0;
             height: 300px;
             height: auto;
