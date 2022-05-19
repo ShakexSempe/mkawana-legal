@@ -1,26 +1,97 @@
 .contact {
     .contact-info {
         // border: 1px solid red;
-        
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: .5rem;
+        }
         .contact-item {
             border-bottom: 2px solid $brand-gold;
             border-top: 2px solid $brand-gold;
             border-radius: 10px;
-            margin: 5vh 0;
-            padding: 1rem 0;
-
+            margin: 10vh 0;
+            padding: 5vh 0;
+            @media (min-width: 768px) {
+                margin: 5vh 0;
+                border: 2px solid $brand-gold;
+                // text-align: center;
+                padding: 5vh 1rem;
+                
+            }
             h3 {
                 text-transform: uppercase;
                 font-size: 1.5rem;
             }
-
-            a {
-                color: $brand-gold;
-                text-transform: capitalize;
-                i {
+            p {
+                
+                padding: 0 1rem 0 0;
+                width: max-content;
+                margin-bottom: 1rem;
+                a {
                     color: $brand-gold;
-                    width: 1.5rem;
+                    color: #fff;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    display: block;
+                    // border-bottom: 1px solid #ead2a1;
+                    // border-bottom-right-radius: 10px;
+                    border: none;
+                    border-radius: 10px;
+                    width: max-content;
+                    padding: 0 1rem;
+                    isolation: isolate;
+                    position: relative;
+                    i {
+                        color: $brand-gold;
+                        color: #fffa;
+                        width: 1.5rem;
+                    }
+
+                    // BTN PSEUDO BG
+                    &::before, &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        width: 100%;
+                        z-index: -1;
+                        background: $brand-gold;
+                        border-radius: 10px;
+                        border: none;
+                        outline: none;
+                        transition: .3s;
+                    }
+                    &::before {
+                        background: $btn-cta;
+                        box-shadow: $box-shadow-sm;
+                    }
+                    &::after{
+                        background: $btn-cta-hover;
+                        box-shadow: $box-shadow-sm-hover;
+                        opacity: 0;
+                    }
+
+                    // ACTIVE AND HOVER STATE
+                    // DESKTOP = HOVER && MOBILE = ACTIVE
+                    @media (max-width: 1024px){
+                        &:active {
+                            transform: scale(.95);
+                            &::before {opacity: 0;}
+                            &::after {opacity: 1;}
+                        }
+                    }
+                    @media (min-width: 1024px){
+                        &:hover {
+                            transform: scale(.95);
+                            &::before {opacity: 0;}
+                            &::after {opacity: 1;}
+                        }
+                    }
                 }
+                
             }
         }
     }
