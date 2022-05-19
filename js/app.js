@@ -33,7 +33,7 @@ logo.addEventListener("click", () => {
 // HERO OBSERVER
 const hero = document.querySelector('.hero');
 const heroOptions = {
-    rootMargin: "-98% 0px 0px 0px",
+    rootMargin: "-100% 0px 0px 0px",
 }
 const heroObserver = new IntersectionObserver(
     function(entries, heroObserver){

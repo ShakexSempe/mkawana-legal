@@ -187,10 +187,10 @@ header nav ul li a {
   }
 }
 header.active-hero {
-  height: 20vh;
+  height: 17vh;
 }
 header.active-hero nav .mobile-links {
-  top: 20vh;
+  top: 17vh;
 }
 @media (min-width: 1024px) {
   header.active-hero {
