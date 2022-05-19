@@ -301,7 +301,29 @@
                             Johannesburg 2191</p> 
                     </div>
                 </div>
-                <div class="contact-form"></div>
+                <div id="form" class="contact-form">
+                    <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
+                        <h2 class="form-title">Make Enquiry</h2>
+                        <div class="input-box">
+                            <label for="name">name</label>
+                            <input type="text" name="name" placeholder="your name an surname..." required="required">
+                        </div>
+                        <div class="input-box">
+                            <label id="email" for="email">email</label>
+                            <input type="email" name="email" placeholder="your email address..." required="required">
+                        </div>
+                        <div class="input-box">
+                            <label id="message" for="message">subject of enquiry</label>
+                            <textarea id="message" name="message" placeholder="eg.Drafting Of Employment Contracts ..." required="required"></textarea>
+                        </div>
+                            <!-- <input type="submit" value="send email"> -->
+                            <button class="submit-btn" type="submit">send email</button>
+                            <input type="hidden" name="_subject" value="Mkhawana legal has received an email !">
+                            <input type="hidden" name="_cc" value="another@email.com">
+                            <input type="hidden" name="_autoresponse" value="Thank you for reaching out to Mkhawana Legal">
+                            <input type="hidden" name="_template" value="table">
+                            <!-- <input type="hidden" name="_next" value="https://shakexsempe.netlify.app/thanks.html"> -->
+                        </form>
             </section>
 
             <div class="home-btn">

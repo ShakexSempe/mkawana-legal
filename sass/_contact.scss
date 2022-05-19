@@ -95,4 +95,132 @@
             }
         }
     }
+
+
+    // FORM 
+    .contact-form {
+        border: 2px solid $brand-gold;
+        // min-height: 100vh;
+        height: auto;
+        border-radius: 10px;
+        padding: 5vh .5rem;
+
+        .form-title {
+            margin-bottom: 5vh;
+            text-align: center;
+        }
+
+        .input-box {
+            // border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5vh;
+
+            label {
+                text-transform: uppercase;
+                transition: .2s;
+                transform: translateY(1.5rem) translateX(.5rem);
+            }
+
+            input, textarea {
+                border: none;
+                border-bottom: 1px solid $brand-gold;
+                border-bottom-right-radius: 10px;
+                outline: none;
+
+                &::placeholder {
+                    opacity: 0;
+                    transition: .2s;
+                }
+            }
+
+            textarea {
+                padding: .5rem;
+                // border: 1px solid $brand-gold;
+                // border-radius: 10px;
+            }
+
+
+            // INPUT BOX HOVER STATE
+            &:hover {
+                label {
+                    color: $brand-gold;
+                    transform: translateX(0) translateY(0);
+                    transition: .5s;
+                }
+
+                input, textarea {
+                    &::placeholder {
+                        opacity: 1;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+
+        .submit-btn {
+            margin: 0 auto;
+            width: 100%;
+            text-transform: uppercase;
+            position: relative;
+            isolation: isolate;
+            border: none;
+            outline: none;
+            display: block;
+            font-size: 1rem;
+            color: #fff;
+            padding: .5rem 0;
+            transition: .2s;
+            cursor: pointer;
+            letter-spacing: .1rem;
+            @media (min-width: 1024px){
+                width: 50%;
+            }
+
+            // SUBMIT BTN AND SHADOW
+            &::before , &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $brand-gold;
+                border: none;
+                outline: none;
+                transition: .3s;
+                z-index: -1;
+                border-radius: 10px;
+            }
+            &::before {
+                background: $btn-cta;
+                box-shadow: $box-shadow-sm;
+            }
+            &::after {
+                background: $btn-cta-hover;
+                box-shadow: $box-shadow-sm-hover;
+
+                opacity: 0;
+            }
+            // HOVER AND ACTIVE STATES
+            // MOBILE ACTIVE STATE
+            @media (max-width: 1024px){
+                &:active {
+                    letter-spacing: normal;
+                    transform: scale(.98);
+                    &::before {opacity: 0;}
+                    &::after {opacity: 1;}
+                }
+            }
+            // DESKTOP HOVER STATE
+            @media (min-width: 1024px){
+                &:hover {
+                    letter-spacing: normal;
+                    transform: scale(.98);
+                    &::before {opacity: 0;}
+                    &::after {opacity: 1;}
+                }
+            }
+        }
+    }
 }
