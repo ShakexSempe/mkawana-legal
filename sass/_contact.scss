@@ -101,11 +101,14 @@
     // FORM 
     .contact-form {
         border: 2px solid $brand-gold;
-        // min-height: 100vh;
-        height: auto;
+        min-height: 100vh;
+        // height: auto;
         border-radius: 10px;
         padding: 5vh .5rem;
-
+        @media (min-width: 768px){
+            width: 60%;
+            margin: 5vh auto;
+        }
         .form-title {
             margin-bottom: 5vh;
             text-align: center;
@@ -115,11 +118,12 @@
             // border: 1px solid red;
             display: flex;
             flex-direction: column;
-            margin-bottom: 5vh;
+            margin-bottom: 10vh;
 
             label {
                 text-transform: uppercase;
                 transition: .2s;
+                font-weight: 500;
                 // transform: translateY(1.5rem) translateX(.5rem);
             }
 
@@ -160,22 +164,29 @@
                 // border-radius: 10px;
             }
 
-
-            // INPUT BOX HOVER STATE
-            // &:hover {
-            //     label {
-            //         color: $brand-gold;
-            //         transform: translateX(0) translateY(0);
-            //         transition: .5s;
-            //     }
-
-            //     input, textarea {
-            //         &::placeholder {
-            //             opacity: 1;
-            //             transition: .3s;
+            // DESKTOP HOVER STYLE
+            // @media (min-width: 900px){
+            //     &:hover {
+            //         label {
+            //             color: $brand-gold;
             //         }
             //     }
             // }
+            // INPUT BOX HOVER STATE
+            &:hover {
+                label {
+                    color: $brand-gold;
+                    // transform: translateX(0) translateY(0);
+                    transition: .5s;
+                }
+
+                // input, textarea {
+                //     &::placeholder {
+                //         opacity: 1;
+                //         transition: .3s;
+                //     }
+                // }
+            }
         }
 
         .submit-btn {

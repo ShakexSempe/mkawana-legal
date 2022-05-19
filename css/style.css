@@ -517,9 +517,15 @@ header.active-hero nav .mobile-links {
 }
 .contact .contact-form {
   border: 2px solid #a16e14;
-  height: auto;
+  min-height: 100vh;
   border-radius: 10px;
   padding: 5vh 0.5rem;
+}
+@media (min-width: 768px) {
+  .contact .contact-form {
+    width: 60%;
+    margin: 5vh auto;
+  }
 }
 .contact .contact-form .form-title {
   margin-bottom: 5vh;
@@ -528,11 +534,12 @@ header.active-hero nav .mobile-links {
 .contact .contact-form .input-box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
 }
 .contact .contact-form .input-box label {
   text-transform: uppercase;
   transition: 0.2s;
+  font-weight: 500;
 }
 .contact .contact-form .input-box input, .contact .contact-form .input-box textarea {
   border: none;
@@ -563,6 +570,10 @@ header.active-hero nav .mobile-links {
 .contact .contact-form .input-box textarea {
   padding: 0.5rem;
   resize: none;
+}
+.contact .contact-form .input-box:hover label {
+  color: #a16e14;
+  transition: 0.5s;
 }
 .contact .contact-form .submit-btn {
   margin: 0 auto;
