@@ -236,9 +236,10 @@ header.active-hero nav .mobile-links {
 }
 
 .hero {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   padding: 10vh 5vw;
+  margin-top: 7vh;
   background-image: url(../img/henry-be-TCsCykbwSJw-unsplash.jpg);
   background-image: url(../img/gavel.jpg);
   background-size: cover;
