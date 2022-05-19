@@ -347,7 +347,7 @@ header.active-hero nav .mobile-links {
   }
   .services .services-container .service-item::after {
     border-radius: 10px;
-    border-right: 1px solid #a16e14;
+    border-right: 2px solid #a16e14;
     opacity: 0;
   }
 }
@@ -433,7 +433,7 @@ header.active-hero nav .mobile-links {
   border-top: 2px solid #a16e14;
   border-radius: 10px;
   margin: 10vh 0;
-  padding: 5vh 0;
+  padding: 1.5rem 0;
 }
 @media (min-width: 768px) {
   .contact .contact-info .contact-item {
@@ -445,6 +445,7 @@ header.active-hero nav .mobile-links {
 .contact .contact-info .contact-item h3 {
   text-transform: uppercase;
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 .contact .contact-info .contact-item p {
   padding: 0 1rem 0 0;

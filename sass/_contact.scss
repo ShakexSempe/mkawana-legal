@@ -11,7 +11,7 @@
             border-top: 2px solid $brand-gold;
             border-radius: 10px;
             margin: 10vh 0;
-            padding: 5vh 0;
+            padding: 1.5rem 0;
             @media (min-width: 768px) {
                 margin: 5vh 0;
                 border: 2px solid $brand-gold;
@@ -22,6 +22,7 @@
             h3 {
                 text-transform: uppercase;
                 font-size: 1.5rem;
+                margin-bottom: 1rem;
             }
             p {
                 
