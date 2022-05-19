@@ -120,43 +120,62 @@
             label {
                 text-transform: uppercase;
                 transition: .2s;
-                transform: translateY(1.5rem) translateX(.5rem);
+                // transform: translateY(1.5rem) translateX(.5rem);
             }
 
             input, textarea {
                 border: none;
-                border-bottom: 1px solid $brand-gold;
+                border-bottom: 2px solid $brand-gold;
                 border-bottom-right-radius: 10px;
+                border-color: $brand-gold;
                 outline: none;
+                transition: .3s;
 
                 &::placeholder {
                     opacity: 0;
                     transition: .2s;
                 }
+                &:focus {
+                border-bottom: 2px solid $brand-gold;
+                border-bottom-right-radius: 10px;
+                    &::placeholder {
+                        opacity: 1;
+                    }
+                }
+
+                &:invalid {
+                    border-bottom: 1px solid #000;
+                border-bottom-right-radius: 0px;
+
+                    &:focus {
+                        border-color: $brand-gold;
+                    }
+                }
             }
 
             textarea {
                 padding: .5rem;
+                resize: none;
                 // border: 1px solid $brand-gold;
                 // border-radius: 10px;
             }
 
 
             // INPUT BOX HOVER STATE
-            &:hover, &:focus {
-                label {
-                    color: $brand-gold;
-                    transform: translateX(0) translateY(0);
-                    transition: .5s;
-                }
+            // &:hover {
+            //     label {
+            //         color: $brand-gold;
+            //         transform: translateX(0) translateY(0);
+            //         transition: .5s;
+            //     }
 
-                input, textarea {
-                    &::placeholder {
-                        opacity: 1;
-                        transition: .3s;
-                    }
-                }
-            }
+            //     input, textarea {
+            //         &::placeholder {
+            //             opacity: 1;
+            //             transition: .3s;
+            //         }
+            //     }
+            // }
         }
 
         .submit-btn {

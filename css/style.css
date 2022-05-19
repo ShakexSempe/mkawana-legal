@@ -533,29 +533,36 @@ header.active-hero nav .mobile-links {
 .contact .contact-form .input-box label {
   text-transform: uppercase;
   transition: 0.2s;
-  transform: translateY(1.5rem) translateX(0.5rem);
 }
 .contact .contact-form .input-box input, .contact .contact-form .input-box textarea {
   border: none;
-  border-bottom: 1px solid #a16e14;
+  border-bottom: 2px solid #a16e14;
   border-bottom-right-radius: 10px;
+  border-color: #a16e14;
   outline: none;
+  transition: 0.3s;
 }
 .contact .contact-form .input-box input::placeholder, .contact .contact-form .input-box textarea::placeholder {
   opacity: 0;
   transition: 0.2s;
 }
+.contact .contact-form .input-box input:focus, .contact .contact-form .input-box textarea:focus {
+  border-bottom: 2px solid #a16e14;
+  border-bottom-right-radius: 10px;
+}
+.contact .contact-form .input-box input:focus::placeholder, .contact .contact-form .input-box textarea:focus::placeholder {
+  opacity: 1;
+}
+.contact .contact-form .input-box input:invalid, .contact .contact-form .input-box textarea:invalid {
+  border-bottom: 1px solid #000;
+  border-bottom-right-radius: 0px;
+}
+.contact .contact-form .input-box input:invalid:focus, .contact .contact-form .input-box textarea:invalid:focus {
+  border-color: #a16e14;
+}
 .contact .contact-form .input-box textarea {
   padding: 0.5rem;
-}
-.contact .contact-form .input-box:hover label, .contact .contact-form .input-box:focus label {
-  color: #a16e14;
-  transform: translateX(0) translateY(0);
-  transition: 0.5s;
-}
-.contact .contact-form .input-box:hover input::placeholder, .contact .contact-form .input-box:hover textarea::placeholder, .contact .contact-form .input-box:focus input::placeholder, .contact .contact-form .input-box:focus textarea::placeholder {
-  opacity: 1;
-  transition: 0.3s;
+  resize: none;
 }
 .contact .contact-form .submit-btn {
   margin: 0 auto;
