@@ -100,11 +100,11 @@
 
     // FORM 
     .contact-form {
-        border: 2px solid $brand-gold;
+        // border: 2px solid $brand-gold;
         min-height: 100vh;
         // height: auto;
         border-radius: 10px;
-        padding: 5vh .5rem;
+        padding: 5vh 0;
         @media (min-width: 768px){
             width: 60%;
             margin: 5vh auto;
@@ -112,6 +112,27 @@
         .form-title {
             margin-bottom: 5vh;
             text-align: center;
+            font-size: 1.5rem;
+            @media (min-width: 1024px){
+                font-size: 2rem;
+            }
+            position: relative;
+            width: max-content;
+            margin: 0 auto 5vh;
+            // PSEUDO UNDERLINE
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: $btn-cta;
+            }
+            &::after {
+                bottom: 4px;
+                width: 60%;
+            }
         }
 
         .input-box {
@@ -134,9 +155,13 @@
                 border-color: $brand-gold;
                 outline: none;
                 transition: .3s;
+                font-size: 1rem;
+                // border: 1px solid red;
+                padding: .5rem 0;
 
                 &::placeholder {
                     opacity: 0;
+                    letter-spacing: .1rem;
                     transition: .2s;
                 }
                 &:focus {
@@ -144,6 +169,7 @@
                 border-bottom-right-radius: 10px;
                     &::placeholder {
                         opacity: 1;
+                        letter-spacing: normal;
                     }
                 }
 
@@ -173,20 +199,16 @@
             //     }
             // }
             // INPUT BOX HOVER STATE
+            @media (min-width: 1024px){
+                margin-bottom: 5vh;
             &:hover {
                 label {
                     color: $brand-gold;
                     // transform: translateX(0) translateY(0);
                     transition: .5s;
                 }
-
-                // input, textarea {
-                //     &::placeholder {
-                //         opacity: 1;
-                //         transition: .3s;
-                //     }
-                // }
             }
+        }
         }
 
         .submit-btn {
