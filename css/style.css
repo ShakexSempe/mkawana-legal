@@ -449,7 +449,6 @@ header.active-hero nav .mobile-links {
 }
 .contact .contact-info .contact-item p {
   padding: 0 1rem 0 0;
-  width: max-content;
   margin-bottom: 1rem;
 }
 .contact .contact-info .contact-item p a {
@@ -460,7 +459,7 @@ header.active-hero nav .mobile-links {
   display: block;
   border: none;
   border-radius: 10px;
-  width: max-content;
+  width: 10rem;
   padding: 0 1rem;
   isolation: isolate;
   position: relative;
@@ -549,12 +548,12 @@ header.active-hero nav .mobile-links {
 .contact .contact-form .input-box textarea {
   padding: 0.5rem;
 }
-.contact .contact-form .input-box:hover label {
+.contact .contact-form .input-box:hover label, .contact .contact-form .input-box:focus label {
   color: #a16e14;
   transform: translateX(0) translateY(0);
   transition: 0.5s;
 }
-.contact .contact-form .input-box:hover input::placeholder, .contact .contact-form .input-box:hover textarea::placeholder {
+.contact .contact-form .input-box:hover input::placeholder, .contact .contact-form .input-box:hover textarea::placeholder, .contact .contact-form .input-box:focus input::placeholder, .contact .contact-form .input-box:focus textarea::placeholder {
   opacity: 1;
   transition: 0.3s;
 }

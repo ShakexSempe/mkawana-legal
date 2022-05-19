@@ -27,7 +27,7 @@
             p {
                 
                 padding: 0 1rem 0 0;
-                width: max-content;
+                // width: max-content;
                 margin-bottom: 1rem;
                 a {
                     color: $brand-gold;
@@ -39,7 +39,7 @@
                     // border-bottom-right-radius: 10px;
                     border: none;
                     border-radius: 10px;
-                    width: max-content;
+                    width: 10rem;
                     padding: 0 1rem;
                     isolation: isolate;
                     position: relative;
@@ -143,7 +143,7 @@
 
 
             // INPUT BOX HOVER STATE
-            &:hover {
+            &:hover, &:focus {
                 label {
                     color: $brand-gold;
                     transform: translateX(0) translateY(0);
