@@ -635,8 +635,50 @@ header.active-hero nav .mobile-links {
 
 footer {
   min-height: 50vh;
+  width: 100%;
   background: #010304;
+  background: #ffff;
   background: linear-gradient(0deg, #000, #161616);
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-logo {
+  background: #ffff;
+  display: grid;
+  place-items: center;
+}
+footer .footer-logo figure {
+  width: 15rem;
+  overflow: hidden;
+}
+footer .footer-logo figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+footer .copyright {
+  padding: 5vh 5vw;
+}
+footer .copyright p {
+  color: #f4f4f4;
+  text-transform: capitalize;
+}
+footer .copyright span {
+  color: #f4f4f4;
+}
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+  footer .footer-logo {
+    width: 50%;
+  }
+  footer .copyright {
+    width: 50%;
+    padding: 5vh 0;
+  }
 }
 
 .toggle {
@@ -660,6 +702,11 @@ footer {
   place-items: center;
   transform: translateY(20vh);
   transition: 1s;
+}
+@media (min-width: 768px) {
+  .home-btn {
+    right: 2vw;
+  }
 }
 .home-btn a {
   text-decoration: none;

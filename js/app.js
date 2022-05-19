@@ -95,3 +95,11 @@ ioItem.forEach(item => {
     );
     itemObserver.observe(item);
 });
+
+
+
+
+
+// DATE 
+const date = document.querySelector(".date");
+date.innerHTML = new Date().getFullYear();
