@@ -399,6 +399,16 @@ header.active-hero nav .mobile-links {
 .services .services-container .service-item:hover::after {
   opacity: 1;
 }
+.services .services-container .service-item.active-content {
+  transition: 1.5s;
+}
+.services .services-container .service-item.active-content::after {
+  opacity: 1;
+}
+.services .services-container .service-item.active-content .content p {
+  height: 10vh;
+  transition: 1.5s;
+}
 @media (min-width: 768px) {
   .services .services-container {
     text-align: center;

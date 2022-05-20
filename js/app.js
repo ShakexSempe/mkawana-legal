@@ -53,26 +53,7 @@ const heroObserver = new IntersectionObserver(
 );
 heroObserver.observe(hero);
 
-// MAIN OBSERVER
-// const mainOptions = {
-//     rootMargin: "50% 0px 0px 0px",
-// }
-// const mainObserver = new IntersectionObserver(
-//     function(entries, mainObserver){
-//         entries.forEach(entry => {
-//             if(!entry.isIntersecting){
-//                 console.log("main NOT Intersecting");
-//                 homeBtn.classList.remove("active");
-//             } else {
-//                 console.log("main is intersecting");
-//                 homeBtn.classList.add("active");
-//             }
-//         })
-//     }, mainOptions
-// );
-// mainObserver.observe(main);
-
-// CONTENT IO
+// SECTION TITLE IO
 const ioItem = document.querySelectorAll('.io-item');
 console.log(ioItem);
 itemOptions= {
@@ -96,7 +77,27 @@ ioItem.forEach(item => {
     itemObserver.observe(item);
 });
 
-
+// CONTENT IO
+const contentIO = document.querySelectorAll('.io-content');
+const contentOptions = {
+    rootMargin: '0% 0px -20% 0px', 
+};
+contentIO.forEach(item => {
+    const itemObserver = new IntersectionObserver(
+        function(entries, itemObserver){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting){
+                    console.log("content NOT IO");
+                    item.classList.remove("active-content");
+                } else {
+                    console.log("content IS IO");
+                    item.classList.add("active-content");
+                }
+            });
+        } , contentOptions
+    );
+    itemObserver.observe(item);
+});
 
 
 

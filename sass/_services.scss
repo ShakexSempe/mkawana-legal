@@ -107,6 +107,25 @@
                 // &::before {opacity: 0;}
                 &::after {opacity: 1;}
             }
+
+            &.active-content {
+                transition: 1.5s;
+                &::after {
+                    opacity: 1;
+                }
+                // .service-title {
+                //     h3 {
+                //         color: #000;
+                //         transition: 1.5s;
+                //     }
+                // }
+                .content {
+                    p {
+                        height: 10vh;
+                        transition: 1.5s;
+                    }
+                }
+            }
         }
 
         // TABLET CONTAINER 
