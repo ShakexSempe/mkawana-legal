@@ -113,17 +113,25 @@
                 &::after {
                     opacity: 1;
                 }
-                // .service-title {
-                //     h3 {
-                //         color: #000;
-                //         transition: 1.5s;
-                //     }
-                // }
+                .service-title {
+                    h3 {
+                        color: #000;
+                        transition: 1.5s;
+                    }
+                }
                 .content {
                     p {
                         height: 10vh;
                         border-bottom: 1px solid #000;
                         transition: 1.5s;
+                    }
+                }
+                &:hover {
+                    .service-title {
+                        h3 {
+                            color: $brand-gold;
+                            transition: .3s;
+                        }
                     }
                 }
             }
