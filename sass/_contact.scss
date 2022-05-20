@@ -128,10 +128,18 @@
                 width: 100%;
                 height: 2px;
                 background: $btn-cta;
+                transform: scale(0);
+                transition: 1.5s;
             }
             &::after {
                 bottom: 4px;
                 width: 60%;
+            }
+
+            &.active-item {
+                &::before, &::after {
+                    transform: scale(1);
+                }
             }
         }
 

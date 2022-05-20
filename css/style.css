@@ -558,10 +558,15 @@ header.active-hero nav .mobile-links {
   width: 100%;
   height: 2px;
   background: linear-gradient(0deg, #5b3e0b, #e39a1c);
+  transform: scale(0);
+  transition: 1.5s;
 }
 .contact .contact-form .form-title::after {
   bottom: 4px;
   width: 60%;
+}
+.contact .contact-form .form-title.active-item::before, .contact .contact-form .form-title.active-item::after {
+  transform: scale(1);
 }
 .contact .contact-form .input-box {
   display: flex;
