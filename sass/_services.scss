@@ -12,36 +12,15 @@
             // border-top: 2px solid $brand-gold;
             // border-bottom-right-radius: 10px;
             // border-top-right-radius: 10px;
+            border: 2px solid $brand-gold;
+                border-left: none;
+                border-radius: 10px;
             padding: 1rem .5rem;
             height: 350px;
-            height: auto;
             position: relative;
             isolation: isolate;
             @media (max-width: 768px){
-            // PSEUDO BORDER
-            &::before , &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                transition: .5s;
-                z-index: -1;
-                // border-radius: 10px;
-            }
-            &::before {
-                border-bottom: 2px solid $brand-gold;
-                border-top: 2px solid $brand-gold;
-                border-bottom-right-radius: 10px;
-                border-top-right-radius: 10px;
-            }
-            &::after {
-                // border: 2px solid $brand-gold;
-                border-radius: 10px;
-                border-right: 2px solid $brand-gold;
-                opacity: 0;
-            }
+                max-height: 55vh;
         }
             .service-title {
                 figure {
@@ -147,7 +126,7 @@
             .service-item {
                 border: 1px solid $brand-gold;
                 border-radius: 10px;
-                height: 50vh;
+                height: auto;
                 overflow: hidden;
                 .service-title {
                     figure {
