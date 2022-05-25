@@ -209,13 +209,16 @@ header.active-hero nav .mobile-links {
   margin-bottom: 1rem;
 }
 .about .about-article p span {
-  font-size: 1.5rem;
+  font-size: 2rem;
   background-color: #000;
-  padding: 0.2rem;
+  padding: 0 0.2rem;
   color: #ead2a1;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0px #a16e14;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   float: left;
-  margin-right: 0.1em;
+  margin-right: 0.15em;
 }
 .about .about-article p a {
   color: #a16e14;
