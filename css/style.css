@@ -538,6 +538,7 @@ header.active-hero nav .mobile-links {
   .contact .contact-form {
     width: 60%;
     margin: 5vh auto;
+    padding: 20vh 0 5vh;
   }
 }
 .contact .contact-form .form-title {
@@ -634,7 +635,7 @@ header.active-hero nav .mobile-links {
   display: block;
   font-size: 1rem;
   color: #fff;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   transition: 0.2s;
   cursor: pointer;
   letter-spacing: 0.1rem;

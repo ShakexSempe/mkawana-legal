@@ -113,6 +113,7 @@
         @media (min-width: 768px){
             width: 60%;
             margin: 5vh auto;
+            padding: 20vh 0 5vh;
         }
         .form-title {
             text-align: center;
@@ -234,7 +235,7 @@
             display: block;
             font-size: 1rem;
             color: #fff;
-            padding: .5rem 0;
+            padding: 1rem 0;
             transition: .2s;
             cursor: pointer;
             letter-spacing: .1rem;
