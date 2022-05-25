@@ -80,7 +80,7 @@ ioItem.forEach(item => {
 // CONTENT IO
 const contentIO = document.querySelectorAll('.io-content');
 const contentOptions = {
-    rootMargin: '0% 0px -20% 0px', 
+    rootMargin: '0% 0px -30% 0px', 
 };
 contentIO.forEach(item => {
     const itemObserver = new IntersectionObserver(
