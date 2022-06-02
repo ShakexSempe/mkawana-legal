@@ -363,7 +363,8 @@ header.active-hero nav .mobile-links {
     z-index: -1;
   }
   .section-pad .slogan {
-    background: #000a;
+    background: #000;
+    border: 1px solid #a16e14;
     border-radius: 5px;
     margin: 1rem 5vw 10vh;
     padding: 0.5rem;
