@@ -449,24 +449,32 @@ header.active-hero nav .mobile-links {
 }
 .services .services-container .service-item .content p {
   border-bottom: 1px solid #a16e14;
-  height: 10vh;
+  height: 0vh;
   transition: 0.5s;
   overflow: hidden;
 }
 @media (min-width: 768px) {
   .services .services-container .service-item .content a {
     margin: 0 auto;
+    transform: translateY(10vh);
   }
 }
 .services .services-container .service-item:hover .service-title h3 {
   transition: 0.3s;
   color: #000;
 }
-.services .services-container .service-item:hover::after {
-  opacity: 1;
+@media (min-width: 768px) {
+  .services .services-container .service-item:hover {
+    background-color: #f4f4f4;
+    transition: background-color 0.2s;
+  }
+  .services .services-container .service-item:hover .content a {
+    transform: translateY(0);
+    transition: transform 0.5s;
+  }
 }
 .services .services-container .service-item.active-content {
-  transition: 1.5s;
+  transition: 1.5s, background-color 0.2s;
 }
 .services .services-container .service-item.active-content::after {
   opacity: 1;
@@ -476,8 +484,15 @@ header.active-hero nav .mobile-links {
   transition: 1.5s;
 }
 .services .services-container .service-item.active-content .content p {
+  height: 10vh;
   border-bottom: 1px solid #000;
   transition: 1.5s;
+}
+.services .services-container .service-item.active-content .content a {
+  transition: 0.2s;
+}
+.services .services-container .service-item.active-content .content a::after, .services .services-container .service-item.active-content .content a::before {
+  transition: 0.2s;
 }
 .services .services-container .service-item.active-content:hover .service-title h3 {
   color: #a16e14;
