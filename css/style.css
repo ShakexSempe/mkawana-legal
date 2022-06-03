@@ -670,39 +670,45 @@ header.active-hero nav .mobile-links {
   margin-bottom: 1rem;
 }
 .contact .contact-form .input-box label {
-  text-transform: uppercase;
+  text-transform: capitalize;
   transition: 0.2s;
   font-weight: 500;
 }
-.contact .contact-form .input-box input, .contact .contact-form .input-box textarea {
+.contact .contact-form .input-box input,
+.contact .contact-form .input-box textarea {
   border: none;
   border-bottom: 2px solid #a16e14;
   border-bottom-right-radius: 10px;
   border-color: #a16e14;
   outline: none;
   transition: 0.3s;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 0.5rem 0;
 }
-.contact .contact-form .input-box input::placeholder, .contact .contact-form .input-box textarea::placeholder {
+.contact .contact-form .input-box input::placeholder,
+.contact .contact-form .input-box textarea::placeholder {
   opacity: 0;
   letter-spacing: 0.1rem;
   transition: 0.2s;
 }
-.contact .contact-form .input-box input:focus, .contact .contact-form .input-box textarea:focus {
+.contact .contact-form .input-box input:focus,
+.contact .contact-form .input-box textarea:focus {
   background: #f4f4f4;
   border-bottom: 2px solid #a16e14;
   border-bottom-right-radius: 10px;
 }
-.contact .contact-form .input-box input:focus::placeholder, .contact .contact-form .input-box textarea:focus::placeholder {
+.contact .contact-form .input-box input:focus::placeholder,
+.contact .contact-form .input-box textarea:focus::placeholder {
   opacity: 1;
   letter-spacing: normal;
 }
-.contact .contact-form .input-box input:invalid, .contact .contact-form .input-box textarea:invalid {
+.contact .contact-form .input-box input:invalid,
+.contact .contact-form .input-box textarea:invalid {
   border-bottom: 1px solid #000;
   border-bottom-right-radius: 0px;
 }
-.contact .contact-form .input-box input:invalid:focus, .contact .contact-form .input-box textarea:invalid:focus {
+.contact .contact-form .input-box input:invalid:focus,
+.contact .contact-form .input-box textarea:invalid:focus {
   border-color: #a16e14;
 }
 .contact .contact-form .input-box textarea {
@@ -729,7 +735,7 @@ header.active-hero nav .mobile-links {
   display: block;
   font-size: 1rem;
   color: #fff;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   transition: 0.2s;
   cursor: pointer;
   letter-spacing: 0.1rem;
