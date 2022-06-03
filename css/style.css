@@ -675,6 +675,7 @@ header.active-hero nav .mobile-links {
   transition: 0.2s;
 }
 .contact .contact-form .input-box input:focus, .contact .contact-form .input-box textarea:focus {
+  background: #f4f4f4;
   border-bottom: 2px solid #a16e14;
   border-bottom-right-radius: 10px;
 }

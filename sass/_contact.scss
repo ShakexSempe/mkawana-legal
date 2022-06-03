@@ -179,6 +179,7 @@
                     transition: .2s;
                 }
                 &:focus {
+                background: #f4f4f4;
                 border-bottom: 2px solid $brand-gold;
                 border-bottom-right-radius: 10px;
                     &::placeholder {
