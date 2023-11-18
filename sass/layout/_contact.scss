@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 .contact {
     .contact-info {
         // border: 1px solid red;
@@ -12,14 +14,14 @@
             gap: .5rem;
         }
         .contact-item {
-            border: 2px solid $brand-gold-trans;
+            border: 2px solid variables.$brand-gold-trans;
             border: 2px solid #000;
             border-radius: 10px;
             margin: 5vh auto;
             padding: 1.5rem .5rem;
             @media (min-width: 768px) {
                 margin: 5vh 0;
-                // border: 2px solid $brand-gold;
+                // border: 2px solid variables.$brand-gold;
                 // text-align: center;
                 padding: 5vh 1rem;
                 
@@ -35,7 +37,7 @@
                 // width: max-content;
                 margin-bottom: 1rem;
                 a {
-                    color: $brand-gold;
+                    color: variables.$brand-gold;
                     color: #fff;
                     text-decoration: none;
                     text-transform: capitalize;
@@ -49,7 +51,7 @@
                     isolation: isolate;
                     position: relative;
                     i {
-                        color: $brand-gold;
+                        color: variables.$brand-gold;
                         color: #fffa;
                         width: 1.5rem;
                     }
@@ -64,19 +66,19 @@
                         height: 100%;
                         width: 100%;
                         z-index: -1;
-                        background: $brand-gold;
+                        background: variables.$brand-gold;
                         border-radius: 10px;
                         border: none;
                         outline: none;
                         transition: .3s;
                     }
                     &::before {
-                        background: $btn-cta;
-                        box-shadow: $box-shadow-sm;
+                        background: variables.$btn-cta;
+                        box-shadow: variables.$box-shadow-sm;
                     }
                     &::after{
-                        background: $btn-cta-hover;
-                        box-shadow: $box-shadow-sm-hover;
+                        background: variables.$btn-cta-hover;
+                        box-shadow: variables.$box-shadow-sm-hover;
                         opacity: 0;
                     }
 
@@ -105,7 +107,7 @@
 
     // FORM 
     .contact-form {
-        // border: 2px solid $brand-gold;
+        // border: 2px solid variables.$brand-gold;
         min-height: 100vh;
         // height: auto;
         border-radius: 10px;
@@ -132,7 +134,7 @@
                 left: 0;
                 width: 100%;
                 height: 2px;
-                background: $btn-cta;
+                background: variables.$btn-cta;
                 transform: scale(0);
                 transition: 1.5s;
             }
@@ -165,9 +167,9 @@
             input,
             textarea {
                 border: none;
-                border-bottom: 2px solid $brand-gold;
+                border-bottom: 2px solid variables.$brand-gold;
                 border-bottom-right-radius: 10px;
-                border-color: $brand-gold;
+                border-color: variables.$brand-gold;
                 outline: none;
                 transition: .3s;
                 font-size: .9rem;
@@ -182,7 +184,7 @@
 
                 &:focus {
                     background: #f4f4f4;
-                    border-bottom: 2px solid $brand-gold;
+                    border-bottom: 2px solid variables.$brand-gold;
                     border-bottom-right-radius: 10px;
 
                     &::placeholder {
@@ -196,7 +198,7 @@
                     border-bottom-right-radius: 0px;
 
                     &:focus {
-                        border-color: $brand-gold;
+                        border-color: variables.$brand-gold;
                     }
                 }
             }
@@ -204,7 +206,7 @@
             textarea {
                 padding: .5rem;
                 resize: none;
-                // border: 1px solid $brand-gold;
+                // border: 1px solid variables.$brand-gold;
                 // border-radius: 10px;
             }
 
@@ -212,7 +214,7 @@
             // @media (min-width: 900px){
             //     &:hover {
             //         label {
-            //             color: $brand-gold;
+            //             color: variables.$brand-gold;
             //         }
             //     }
             // }
@@ -221,7 +223,7 @@
                 margin-bottom: 5vh;
             &:hover {
                 label {
-                    color: $brand-gold;
+                    color: variables.$brand-gold;
                     // transform: translateX(0) translateY(0);
                     transition: .5s;
                 }
@@ -256,7 +258,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background: $brand-gold;
+                background: variables.$brand-gold;
                 border: none;
                 outline: none;
                 transition: .3s;
@@ -264,12 +266,12 @@
                 border-radius: 10px;
             }
             &::before {
-                background: $btn-cta;
-                box-shadow: $box-shadow-sm;
+                background: variables.$btn-cta;
+                box-shadow: variables.$box-shadow-sm;
             }
             &::after {
-                background: $btn-cta-hover;
-                box-shadow: $box-shadow-sm-hover;
+                background: variables.$btn-cta-hover;
+                box-shadow: variables.$box-shadow-sm-hover;
 
                 opacity: 0;
             }

@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 .services {
     // background: #f4f4f4;
 
@@ -7,12 +9,12 @@
         gap: 10vh;
         // MOBILE CONTAINER
         .service-item {
-            // border: 1px solid $brand-gold;
-            // border-bottom: 2px solid $brand-gold;
-            // border-top: 2px solid $brand-gold;
+            // border: 1px solid variables.$brand-gold;
+            // border-bottom: 2px solid variables.$brand-gold;
+            // border-top: 2px solid variables.$brand-gold;
             // border-bottom-right-radius: 10px;
             // border-top-right-radius: 10px;
-            border: 2px solid $brand-gold;
+            border: 2px solid variables.$brand-gold;
             border-left: none;
             border-radius: 10px;
             padding: 1rem .5rem;
@@ -48,14 +50,14 @@
                 h3 {
                     text-transform: uppercase;
                     font-size: 1.25rem;
-                    color: $brand-gold;
+                    color: variables.$brand-gold;
                 }
             }
 
             .content {
                 p {
                     // text-transform: sente;
-                    border-bottom: 1px solid $brand-gold;
+                    border-bottom: 1px solid variables.$brand-gold;
                     height: 0vh;
                     transition: .5s;
                     overflow: hidden;
@@ -118,7 +120,7 @@
                 &:hover {
                     .service-title {
                         h3 {
-                            color: $brand-gold;
+                            color: variables.$brand-gold;
                             transition: .3s;
                         }
                     }
@@ -134,7 +136,7 @@
             gap: 1rem;
 
             .service-item {
-                border: 1px solid $brand-gold;
+                border: 1px solid variables.$brand-gold;
                 border-radius: 10px;
                 height: auto;
                 overflow: hidden;

@@ -1,7 +1,9 @@
+@use '../abstracts/variables';
+
 footer {
     min-height: 90vh;
     width: 100%;
-    background: $brand-dark;
+    background: variables.$brand-dark;
     background: linear-gradient(0deg, #000, #161616);
     background: #ffff;
     display: flex;
@@ -17,7 +19,7 @@ footer {
             width: 90%;
             height: 100%;
             overflow: hidden;
-            // background-color: $brand-gold;
+            // background-color: variables.$brand-gold;
             img {
                 width: 100%;
                 height: 100%;

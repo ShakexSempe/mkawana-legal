@@ -1,6 +1,8 @@
+@use '../abstracts/variables';
+
 .about {
     .about-article {
-        // border: 1px solid $brand-gold;
+        // border: 1px solid variables.$brand-gold;
 
         p {
             &:nth-child(1){
@@ -12,7 +14,7 @@
                 padding: 0 .2rem;
                 color: #ead2a1;
                 color: #fff;
-                text-shadow: .1rem .1rem 0px $brand-gold;
+                text-shadow: .1rem .1rem 0px variables.$brand-gold;
                 box-shadow: 3px 3px 0px rgba(0,0,0,.2);
                 border-radius: 5px;
                 float: left;
@@ -20,7 +22,7 @@
             }
 
             a {
-                color: $brand-gold;
+                color: variables.$brand-gold;
                 text-transform: capitalize;
             }
         }
