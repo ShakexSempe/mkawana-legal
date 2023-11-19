@@ -648,6 +648,7 @@ header.active-hero nav .mobile-links {
 }
 
 .hero {
+  height: 90vh;
   height: 100dvh;
   width: 100%;
   padding: 20vh 5vw 5vh;
