@@ -1,17 +1,85 @@
-/* Error: Undefined variable.
- *    ,
- * 51 |             border: 1px solid $brand-gold;
- *    |                               ^^^^^^^^^^^
- *    '
- *   sass\sectionPad.scss 51:31  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 51 \2502              border: 1px solid $brand-gold;\d\a    \2502                                ^^^^^^^^^^^\a    \2575 \a   sass\\sectionPad.scss 51:31  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Montserrat:wght@200;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;700&display=swap");
+.section-pad {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  isolation: isolate;
 }
+.section-pad .section-img {
+  height: 95vh;
+  position: relative;
+}
+.section-pad .section-img img {
+  height: 100%;
+  object-fit: cover;
+}
+.section-pad .slogan {
+  color: #f4f4f4;
+  position: absolute;
+}
+@media (max-width: 1024px) {
+  .section-pad {
+    position: relative;
+  }
+  .section-pad::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+  .section-pad .section-img.img-1 {
+    position: sticky;
+    top: 7vh;
+    z-index: -2;
+  }
+  .section-pad .section-img.img-2 {
+    z-index: -1;
+  }
+  .section-pad .slogan {
+    background: #000;
+    border: 1px solid #a16e14;
+    border-radius: 5px;
+    margin: 1rem 5vw 10vh;
+    padding: 0.5rem;
+    position: sticky;
+    top: 50vh;
+  }
+  .section-pad .slogan p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section-pad figure img {
+    display: none;
+  }
+  .section-pad .section-img {
+    background-attachment: fixed;
+  }
+  .section-pad .section-img.img-1 {
+    background-color: #ddd;
+    background-image: url(../img/patrick-fore-H5Lf0nGyetk-unsplash.jpg);
+  }
+  .section-pad .section-img.img-2 {
+    background-color: #eee;
+    background-image: url(../img/clarisse-meyer-jKU2NneZAbI-unsplash.jpg);
+  }
+  .section-pad .slogan {
+    background: #000;
+    padding: 5vh 5vw;
+    width: 100%;
+    position: sticky;
+    top: 10vh;
+    z-index: 5;
+  }
+  .section-pad .slogan p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=sectionPad.css.map */

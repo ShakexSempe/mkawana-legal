@@ -1,17 +1,12 @@
 .hero {
     // min-height: 100vh;
-    height: 100vh;
+    height: 100svh;
     width: 100%;
-    padding: 10vh 5vw;
-    margin-top: 7vh;
-    // background-color: #f4f4f4;
-    background-image: url(../img/henry-be-TCsCykbwSJw-unsplash.jpg);
-    background-image: url(../img/gavel.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    padding: 20vh 5vw 5vh;
     position: relative;
     isolation: isolate;
+    // outline-color: red;
+    // color: red;
     // HERO OVERLAY
     &::after {
         content: '';
@@ -21,50 +16,21 @@
         width: 100%;
         height: 100%;
         background: hsla(0, 0%, 0%, 0.550);
+        background: #000;
+        background: #ffff;
         z-index: -1;
-    }
-    // DESKTOP HERO
-    @media(min-width: 900px) {
-        background-image: url(../img/patrick-fore-H5Lf0nGyetk-unsplash.jpg);
-        background-image: url(../img/balance.jpg);
-        background-attachment: fixed;
-        margin-top: 0;
-        // background-position: left;
     }
 
     .hero-title {
-        position: sticky;
-        top: 30vh;
-        color: #fff;
+        color: #000;
         text-transform: capitalize;
         
 
         h1 {
-            font-size: 2.3rem;
+            font-size: 2rem;
+            text-wrap: balance;
             line-height: 1.2;
-            margin-bottom: 1.5rem;
-        }
-        
-        p {
-            color: #eee;
-            line-height: 1.5;
-        }
-
-        @media (min-width: 900px) {
-            text-align: center;
-            h1 {
-                font-size: 3rem;
-                margin-bottom: 5vh;
-                text-transform: uppercase;
-            }
-
-            p {
-                font-size: 1.5rem;
-            }
-            .cta {
-                a {
-                }
-            }
+            margin-bottom: 1rem;
         }
     }
 }
