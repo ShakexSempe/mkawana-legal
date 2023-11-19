@@ -22,8 +22,10 @@
             }
 
             a {
+                display: block;
                 color: variables.$brand-gold;
                 text-transform: capitalize;
+                text-decoration: underline;
             }
         }
 
