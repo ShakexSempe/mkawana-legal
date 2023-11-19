@@ -1,6 +1,7 @@
-@use '../abstracts/variables';
+@use '../abstracts';
 
 .contact {
+
     .contact-info {
         // border: 1px solid red;
         @media (min-width: 768px) {
@@ -13,15 +14,16 @@
             grid-template-columns: 1fr 1fr 1fr;
             gap: .5rem;
         }
+
         .contact-item {
-            border: 2px solid variables.$brand-gold-trans;
+            border: 2px solid abstracts.$brand-gold-trans;
             border: 2px solid #000;
             border-radius: 10px;
             margin: 5vh auto;
             padding: 1.5rem .5rem;
             @media (min-width: 768px) {
                 margin: 5vh 0;
-                // border: 2px solid variables.$brand-gold;
+                // border: 2px solid abstracts.$brand-gold;
                 // text-align: center;
                 padding: 5vh 1rem;
                 
@@ -37,7 +39,7 @@
                 // width: max-content;
                 margin-bottom: 1rem;
                 a {
-                    color: variables.$brand-gold;
+                    color: abstracts.$brand-gold;
                     color: #fff;
                     text-decoration: none;
                     text-transform: capitalize;
@@ -51,7 +53,7 @@
                     isolation: isolate;
                     position: relative;
                     i {
-                        color: variables.$brand-gold;
+                        color: abstracts.$brand-gold;
                         color: #fffa;
                         width: 1.5rem;
                     }
@@ -66,19 +68,19 @@
                         height: 100%;
                         width: 100%;
                         z-index: -1;
-                        background: variables.$brand-gold;
+                        background: abstracts.$brand-gold;
                         border-radius: 10px;
                         border: none;
                         outline: none;
                         transition: .3s;
                     }
                     &::before {
-                        background: variables.$btn-cta;
-                        box-shadow: variables.$box-shadow-sm;
+                        background: abstracts.$btn-cta;
+                        box-shadow: abstracts.$box-shadow-sm;
                     }
                     &::after{
-                        background: variables.$btn-cta-hover;
-                        box-shadow: variables.$box-shadow-sm-hover;
+                        background: abstracts.$btn-cta-hover;
+                        box-shadow: abstracts.$box-shadow-sm-hover;
                         opacity: 0;
                     }
 
@@ -107,7 +109,7 @@
 
     // FORM 
     .contact-form {
-        // border: 2px solid variables.$brand-gold;
+        // border: 2px solid abstracts.$brand-gold;
         min-height: 100vh;
         // height: auto;
         border-radius: 10px;
@@ -134,7 +136,7 @@
                 left: 0;
                 width: 100%;
                 height: 2px;
-                background: variables.$btn-cta;
+                background: abstracts.$btn-cta;
                 transform: scale(0);
                 transition: 1.5s;
             }
@@ -167,9 +169,9 @@
             input,
             textarea {
                 border: none;
-                border-bottom: 2px solid variables.$brand-gold;
+                border-bottom: 2px solid abstracts.$brand-gold;
                 border-bottom-right-radius: 10px;
-                border-color: variables.$brand-gold;
+                border-color: abstracts.$brand-gold;
                 outline: none;
                 transition: .3s;
                 font-size: .9rem;
@@ -184,7 +186,7 @@
 
                 &:focus {
                     background: #f4f4f4;
-                    border-bottom: 2px solid variables.$brand-gold;
+                    border-bottom: 2px solid abstracts.$brand-gold;
                     border-bottom-right-radius: 10px;
 
                     &::placeholder {
@@ -198,7 +200,7 @@
                     border-bottom-right-radius: 0px;
 
                     &:focus {
-                        border-color: variables.$brand-gold;
+                        border-color: abstracts.$brand-gold;
                     }
                 }
             }
@@ -206,7 +208,7 @@
             textarea {
                 padding: .5rem;
                 resize: none;
-                // border: 1px solid variables.$brand-gold;
+                // border: 1px solid abstracts.$brand-gold;
                 // border-radius: 10px;
             }
 
@@ -214,7 +216,7 @@
             // @media (min-width: 900px){
             //     &:hover {
             //         label {
-            //             color: variables.$brand-gold;
+            //             color: abstracts.$brand-gold;
             //         }
             //     }
             // }
@@ -223,7 +225,7 @@
                 margin-bottom: 5vh;
             &:hover {
                 label {
-                    color: variables.$brand-gold;
+                    color: abstracts.$brand-gold;
                     // transform: translateX(0) translateY(0);
                     transition: .5s;
                 }
@@ -231,67 +233,15 @@
         }
         }
 
-        .submit-btn {
-            margin: 0 auto;
-            width: 100%;
-            text-transform: uppercase;
-            position: relative;
-            isolation: isolate;
+        .cta {
+            margin: 1.5rem 0 0;
+            width: 60%;
             border: none;
-            outline: none;
-            display: block;
-            font-size: 1rem;
-            color: #fff;
-            padding: .5rem 0;
-            transition: .2s;
-            cursor: pointer;
-            letter-spacing: .1rem;
-            @media (min-width: 1024px){
-                width: 50%;
-            }
+            padding: 0.85rem 1rem;
+            &:hover {
 
-            // SUBMIT BTN AND SHADOW
-            &::before , &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: variables.$brand-gold;
-                border: none;
-                outline: none;
-                transition: .3s;
-                z-index: -1;
-                border-radius: 10px;
-            }
-            &::before {
-                background: variables.$btn-cta;
-                box-shadow: variables.$box-shadow-sm;
-            }
-            &::after {
-                background: variables.$btn-cta-hover;
-                box-shadow: variables.$box-shadow-sm-hover;
-
-                opacity: 0;
-            }
-            // HOVER AND ACTIVE STATES
-            // MOBILE ACTIVE STATE
-            @media (max-width: 1024px){
-                &:active {
-                    letter-spacing: normal;
-                    transform: scale(.98);
-                    &::before {opacity: 0;}
-                    &::after {opacity: 1;}
-                }
-            }
-            // DESKTOP HOVER STATE
-            @media (min-width: 1024px){
-                &:hover {
-                    letter-spacing: normal;
-                    transform: scale(.98);
-                    &::before {opacity: 0;}
-                    &::after {opacity: 1;}
+                .icon {
+                    transform: rotate(30deg);
                 }
             }
         }

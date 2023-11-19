@@ -97,4 +97,31 @@
         opacity: 0;
     }
     
+
+
+    // DESKTOP HOVER
+    @media (min-width: 820px) {
+        &:hover {
+            transform: scale(0.98);
+            &::before {
+                opacity: 0;
+            }
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+    // MOBILE ACTIVE
+    @media (max-width: 820px) {
+        &:active {
+            transform: scale(0.98);
+            &::before {
+                opacity: 0;
+            }
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
 }
