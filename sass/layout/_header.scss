@@ -69,17 +69,14 @@ header {
 
             background-color: abstracts.$brand-dark;
             color: abstracts.$text-light;
-            // border-bottom: 2px solid abstracts.$brand-gold;
             border-bottom: 0px solid transparent;
             transition: .5s;
             overflow: hidden;
             z-index: 1;
 
             ul {
-                border: 2px solid #000;
-                width: 50%;
+                // width: 100%;
                 margin: 5vh 5vw;
-                // outline-color: red;
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
@@ -90,13 +87,14 @@ header {
                     transition: 500ms;
 
                     a {
+                        // outline-color: red;
                         display: flex;
                         align-items: baseline;
                         gap: 1rem;
                         padding-bottom: 0.5rem;
                         // color: abstracts.$brand-gold;
                         border-bottom: 1px solid #ead2a188;
-                        width: 100%;
+                        width: 70%;
                         cursor: default;
                         transition: 500ms;
 
@@ -139,7 +137,7 @@ header {
             // ACTIVE ASIDE
             &.active-menu {
                 top: $header-height;
-                height: 60vh;
+                height: 55vh;
                 border-bottom: 2px solid abstracts.$brand-gold;
 
                 .mobile-links {
@@ -152,15 +150,15 @@ header {
                         opacity: 1;
 
                         &:nth-child(1) {
-                            transition-delay: .2s;
+                            transition-delay: 200ms;
                         }
 
                         &:nth-child(2) {
-                            transition-delay: .3s;
+                            transition-delay: 300ms;
                         }
 
                         &:nth-child(3) {
-                            transition-delay: .4s;
+                            transition-delay: 400ms;
                         }
                     }
                 }
@@ -169,18 +167,18 @@ header {
                     a {
                         opacity: 1;
                         transform: translateY(0);
-                        transition: 1s;
+                        transition: 500ms;
 
                         &:nth-child(1) {
-                            transition-delay: .4s;
+                            transition-delay: 450ms;
                         }
 
                         &:nth-child(2) {
-                            transition-delay: .5s;
+                            transition-delay: 550ms;
                         }
 
                         &:nth-child(3) {
-                            transition-delay: .6s;
+                            transition-delay: 650ms;
                         }
                     }
                 }
