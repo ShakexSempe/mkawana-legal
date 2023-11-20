@@ -139,7 +139,7 @@ header {
             // ACTIVE ASIDE
             &.active-menu {
                 top: $header-height;
-                height: 50vh;
+                height: 60vh;
                 border-bottom: 2px solid abstracts.$brand-gold;
 
                 .mobile-links {

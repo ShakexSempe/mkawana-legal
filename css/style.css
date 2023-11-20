@@ -634,7 +634,7 @@ header nav .mobile-links .social-links a i {
 }
 header nav .mobile-links.active-menu {
   top: 7vh;
-  height: 50vh;
+  height: 60vh;
   border-bottom: 2px solid #a16e14;
 }
 header nav .mobile-links.active-menu .mobile-links {
