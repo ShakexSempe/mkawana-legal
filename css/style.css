@@ -650,6 +650,7 @@ header.active-hero nav .mobile-links {
 }
 @media (min-width: 768px) {
   .hero {
+    height: 100vh;
     grid-template-columns: 1fr 1fr 20rem;
     grid-template-rows: auto 1fr;
     grid-template-areas: " title title cta" "image image image";
