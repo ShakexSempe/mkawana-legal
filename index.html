@@ -360,67 +360,93 @@
 
             <!-- CONTACT -->
             <section class=" section contact" id="contact">
+
                 <div class="section-title io-item">
                     <h2>contact</h2>
                 </div>
 
-                <div id="contact-info" class="contact-info">
-                    <!-- PHONE -->
-                    <div class="contact-item">
-                        <h3>Phone:</h3>
-                        <p>0712345678
-                            <a href="tel:0712345678"><i class="fa fa-phone-volume"></i>call now</a>
-                        </p>
-                    </div>
-                    <!-- EMAIL -->
-                    <div class="contact-item">
-                        <h3>Email:</h3>
-                        <p>advcarlam@mkhawanalegal.co.za
-                        <a href="mailto:advcarlam@mkhawanalegal.co.za"><i class="fa fa-envelope"></i>send email</a>   
+                <div class="contact-container">
 
-                        </p>  
-                        <p>info@mkhawanalegal.co.za
-                            <a href="mailto:info@mkhawanalegal.co.za"><i class="fa fa-envelope"></i>send email</a>
-                        </p>  
-                    </div>
-                    <!-- ADDRESS -->
-                    <div class="contact-item">
-                        <h3>Address:</h3>
-                        <p>345 Rivonia Road <br>
-                            Block A 1st Floor <br>
-                            Rivonia <br>
-                            Johannesburg 2191</p> 
-                    </div>
-                </div>
+                    <!-- CONTACT INFO -->
+                    <div id="contact-info" class="contact-info">
+                        
+                        <h2 class="form-title io-item">Contact info</h2>
+                        
+                        <div class="contact-info-grid">
+                            <!-- PHONE -->
+                            <div class="contact-item">
+                                <h3>Phone:</h3>
+                                <div class="contact-link">
+                                    <img src="icons/outline/icons8-outgoing-call-24-light.png" alt="outgoing-call"
+                                        width="24" height="24" class="icon">
+                                    <a href="tel:0712345678">
+                                        0712345678
+                                    </a>
+                                </div>
+                            </div>
 
-                <!-- CONTACT FORM -->
-                <div id="form" class="contact-form">
-                    <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
+                            <!-- EMAIL -->
+                            <div class="contact-item">
+                                <h3>Email:</h3>
+                                <div class="contact-link">
+                                    <img src="icons/solid/icons8-envelope-24-light.png" alt="envelope" width="24"
+                                        height="24" class="icon">
+                                    <a href="mailto:info@mkhawanalegal.co.za">
+                                        info@mkhawanalegal.co.za
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- ADDRESS -->
+                            <div class="contact-item">
+                                <h3>Address:</h3>
+                                <p>345 Rivonia Road <br>
+                                    Block A 1st Floor <br>
+                                    Rivonia <br>
+                                    Johannesburg 2191</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CONTACT FORM -->
+                    <div id="form" class="contact-form">
                         <h2 class="form-title io-item">Make Enquiry</h2>
                         
-                        <div class="input-box">
-                            <label for="name">name: </label>
-                            <input type="text" name="name" placeholder="your name an surname..." required="required">
-                        </div>
-                        <div class="input-box">
-                            <label id="email" for="email">email: </label>
-                            <input type="email" name="email" placeholder="your email address..." required="required">
-                        </div>
-                        <div class="input-box">
-                            <label id="message" for="message">subject of enquiry: </label>
-                            <textarea id="message" name="message" placeholder="eg.Drafting Of Employment Contracts ..." required="required"></textarea>
-                        </div>
+                        <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
+
+                            <div class="input-box">
+                                <label for="name">name: </label>
+                                <input type="text" name="name" placeholder="your name an surname..."
+                                    required="required">
+                            </div>
+                            <div class="input-box">
+                                <label id="email" for="email">email: </label>
+                                <input type="email" name="email" placeholder="your email address..."
+                                    required="required">
+                            </div>
+                            <div class="input-box">
+                                <label id="message" for="message">subject of enquiry: </label>
+                                <textarea id="message" name="message"
+                                    placeholder="eg.Drafting Of Employment Contracts ..."
+                                    required="required"></textarea>
+                            </div>
                             <!-- <input type="submit" value="send email"> -->
                             <button class="cta" type="submit">submit enquiry
-                                <img src="icons/solid/icons8-email-send-48-light.png" height="48" width="48" alt="sent evelope" class="icon">
+                                <img src="icons/solid/icons8-email-send-48-light.png" height="48" width="48"
+                                    alt="sent evelope" class="icon">
                             </button>
                             <input type="hidden" name="_subject" value="Mkhawana legal has received an email !">
                             <input type="hidden" name="_cc" value="another@email.com">
-                            <input type="hidden" name="_autoresponse" value="Thank you for reaching out to Mkhawana Legal">
+                            <input type="hidden" name="_autoresponse"
+                                value="Thank you for reaching out to Mkhawana Legal">
                             <input type="hidden" name="_template" value="table">
                             <!-- <input type="hidden" name="_next" value="https://shakexsempe.netlify.app/thanks.html"> -->
                         </form>
+
                     </div>
+
+                </div>
+
             </section>
 
             <div class="home-btn">
