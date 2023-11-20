@@ -55,7 +55,7 @@ body p {
 }
 body .icon {
   width: 1rem;
-  height: auto;
+  height: 1rem;
   transition: 0.25s;
 }
 
@@ -518,10 +518,14 @@ header nav .mobile-links ul li:hover a {
 header nav .mobile-links .social-links {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   margin: 0 5vw;
   overflow: hidden;
 }
 header nav .mobile-links .social-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   transform: translateY(2rem);
   opacity: 0;
   text-decoration: none;
