@@ -739,7 +739,7 @@ header.active-hero nav .mobile-links {
 .hero {
   height: 90vh;
   width: 100%;
-  padding: 15vh 5vw 0vh;
+  padding: 15vh 5vw 5vh;
   position: relative;
   isolation: isolate;
   display: grid;

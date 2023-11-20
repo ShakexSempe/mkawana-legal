@@ -7,14 +7,13 @@
     // outline-color: blue;
     height: 90vh;
     width: 100%;
-    padding: 15vh 5vw 0vh;
+    padding: 15vh 5vw 5vh;
     position: relative;
     isolation: isolate;
     
     display: grid;
     gap: 1rem;
     grid-template-areas: 'title' 'image' 'cta';
-    // grid-template-rows: auto auto auto 1fr;
     grid-template-rows: auto 1fr auto;
     
 
