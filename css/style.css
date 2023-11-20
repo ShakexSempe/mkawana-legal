@@ -48,6 +48,9 @@ body {
   line-height: 1.5;
   font-family: "Prompt", sans-serif;
 }
+body a:focus {
+  outline: 1px solid #a16e14;
+}
 body p {
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
@@ -381,13 +384,12 @@ a {
 }
 @media (min-width: 820px) {
   .contact .contact-form {
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 }
 .contact .contact-form .input-box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10vh;
   margin-bottom: 1rem;
 }
 .contact .contact-form .input-box label {
@@ -399,14 +401,11 @@ a {
 }
 .contact .contact-form .input-box input,
 .contact .contact-form .input-box textarea {
-  border: none;
-  border-bottom: 2px solid #a16e14;
-  border-bottom-right-radius: 10px;
-  border-color: #a16e14;
+  border-radius: 2px;
   outline: none;
   transition: 0.3s;
   font-size: 0.9rem;
-  padding: 0.5rem 0;
+  padding: 0.75rem;
 }
 .contact .contact-form .input-box input::placeholder,
 .contact .contact-form .input-box textarea::placeholder {
@@ -429,7 +428,7 @@ a {
 }
 .contact .contact-form .input-box input:invalid,
 .contact .contact-form .input-box textarea:invalid {
-  border-bottom: 1px solid #000;
+  border: 1px solid #000;
   border-bottom-right-radius: 0px;
 }
 .contact .contact-form .input-box input:invalid:focus,
@@ -455,7 +454,7 @@ a {
   border: none;
   padding: 0.85rem 1rem;
 }
-.contact .contact-form .cta:hover .icon {
+.contact .contact-form .cta:hover .icon, .contact .contact-form .cta:focus .icon {
   transform: rotate(30deg);
 }
 
@@ -1062,13 +1061,13 @@ header.active-hero nav .mobile-links {
   opacity: 0;
 }
 @media (min-width: 820px) {
-  .cta:hover {
+  .cta:hover, .cta:focus {
     transform: scale(0.98);
   }
-  .cta:hover::before {
+  .cta:hover::before, .cta:focus::before {
     opacity: 0;
   }
-  .cta:hover::after {
+  .cta:hover::after, .cta:focus::after {
     opacity: 1;
   }
 }

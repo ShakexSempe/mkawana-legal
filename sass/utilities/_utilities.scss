@@ -103,7 +103,7 @@
 
     // DESKTOP HOVER
     @media (min-width: 820px) {
-        &:hover {
+        &:hover , &:focus {
             transform: scale(0.98);
             &::before {
                 opacity: 0;
