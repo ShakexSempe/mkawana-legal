@@ -1,7 +1,7 @@
-@use '../abstracts/variables';
+@use '../abstracts';
 
 .services {
-    // background: #f4f4f4;
+    background: #f4f4f4;
 
     .services-container {
         // border: 1px solid red;
@@ -9,21 +9,18 @@
         gap: 10vh;
         // MOBILE CONTAINER
         .service-item {
-            // border: 1px solid variables.$brand-gold;
-            // border-bottom: 2px solid variables.$brand-gold;
-            // border-top: 2px solid variables.$brand-gold;
-            // border-bottom-right-radius: 10px;
-            // border-top-right-radius: 10px;
-            border: 2px solid variables.$brand-gold;
-            border-left: none;
             border-radius: 10px;
-            padding: 1rem .5rem;
+            background: #fff;
+            padding: 1rem;
             height: 350px;
             position: relative;
             isolation: isolate;
+            box-shadow: 0.125rem 0.5rem 1rem #0002;
+
             @media (max-width: 768px){
                 max-height: 55vh;
-        }
+            }
+
             .service-title {
                 figure {
                     // border: 1px solid red;
@@ -50,29 +47,38 @@
                 h3 {
                     text-transform: uppercase;
                     font-size: 1.25rem;
-                    color: variables.$brand-gold;
+                    color: abstracts.$brand-gold;
+                    margin-bottom: 0.5rem;
                 }
             }
 
             .content {
                 p {
                     // text-transform: sente;
-                    border-bottom: 1px solid variables.$brand-gold;
+                    border-bottom: 1px solid abstracts.$brand-gold;
                     height: 0vh;
                     transition: .5s;
                     overflow: hidden;
+                    text-wrap: balance;
+                    font-family: sans-serif;
                 }
                 // CTA MARGIN AUTO = CENTER ALIGNED
-                a {
-                    // margin: 0 auto;
+                .cta {
+                    margin: 1rem 0;
                 }
-                @media (min-width: 768px){
+
+                // DESKTOP CTA
+                @include abstracts.md {
+                    .cta {
+                        margin: 1rem auto 0;
+                    }
                     a {
-                        margin: 0 auto;
-                        transform: translateY(10vh);
+                        // margin: 0 auto;
+                        // transform: translateY(10vh);
                     }
                 }
             }
+
             &:hover {
                 .service-title {
                     h3 {
@@ -81,7 +87,6 @@
                     }
                 }
                 @media (min-width: 768px){
-                    background-color: #f4f4f4;
                     transition: background-color .2s;
                     .content {
                         a {
@@ -91,6 +96,7 @@
                     }
                 }
             }
+
             // IO ACTIVE CLASS
             &.active-content {
                 transition: 1.5s, background-color .2s;
@@ -120,7 +126,7 @@
                 &:hover {
                     .service-title {
                         h3 {
-                            color: variables.$brand-gold;
+                            color: abstracts.$brand-gold;
                             transition: .3s;
                         }
                     }
@@ -133,10 +139,9 @@
             // border: 1px solid green;
             text-align: center;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            gap: 2rem;
 
             .service-item {
-                border: 1px solid variables.$brand-gold;
                 border-radius: 10px;
                 height: auto;
                 overflow: hidden;
@@ -152,7 +157,7 @@
         @media (min-width: 1024px) {
             // border: 1px solid yellow;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 1rem;
+            gap: 4rem 2rem;
         }
     }
 }
