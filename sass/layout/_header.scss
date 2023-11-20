@@ -2,7 +2,9 @@
 
 header {
     // outline-color: blue;
-    $header-height: 10vh;
+    $header-height: 7vh;
+    $active-header-height: 10vh;
+
     background: #fff;
     position: fixed;
     top: 0;
@@ -253,10 +255,11 @@ header {
 
     // OBSERVER CLASS 
     &.active-hero {
-        height: 15vh;
+        height: $active-header-height;
         nav {
             .mobile-links {
-                top: 15vh;
+                // top: 10vh;
+                top: $active-header-height;
             }
         }
 

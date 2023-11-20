@@ -535,7 +535,7 @@ header {
   top: 0;
   width: 100%;
   height: 7vh;
-  height: 10vh;
+  height: 7vh;
   padding: 0.25rem 5vw;
   display: flex;
   justify-content: space-between;
@@ -570,7 +570,7 @@ header nav ul li a {
 }
 header nav .mobile-links {
   position: absolute;
-  top: 10vh;
+  top: 7vh;
   right: 0;
   width: 100%;
   height: 0vh;
@@ -633,12 +633,12 @@ header nav .mobile-links .social-links a i {
   color: #a16e14;
 }
 header nav .mobile-links.active-menu {
-  top: 10vh;
+  top: 7vh;
   height: 50vh;
   border-bottom: 2px solid #a16e14;
 }
 header nav .mobile-links.active-menu .mobile-links {
-  top: 10vh;
+  top: 7vh;
 }
 header nav .mobile-links.active-menu ul li {
   transform: translateX(0);
@@ -720,10 +720,10 @@ header nav .desktop-links {
   }
 }
 header.active-hero {
-  height: 15vh;
+  height: 10vh;
 }
 header.active-hero nav .mobile-links {
-  top: 15vh;
+  top: 10vh;
 }
 @media (min-width: 1024px) {
   header.active-hero {
@@ -738,7 +738,7 @@ header.active-hero nav .mobile-links {
 .hero {
   height: 90vh;
   width: 100%;
-  padding: 20vh 5vw 0vh;
+  padding: 15vh 5vw 0vh;
   position: relative;
   isolation: isolate;
   display: grid;
