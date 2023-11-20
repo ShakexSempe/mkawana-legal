@@ -6,8 +6,9 @@ const header = document.querySelector('.header');
 const container = document.querySelector('.container');
 const main = document.querySelector('.main');
 const homeBtn = document.querySelector('.home-btn');
+const bottomNav = document.querySelector('.bottom-nav');
 const navLinks = document.querySelectorAll("header .mobile-links ul li a");
-console.log(main);
+console.log(bottomNav);
 
 toggle.addEventListener("click", () => {
     header.classList.remove("active-hero");
@@ -42,11 +43,13 @@ const heroObserver = new IntersectionObserver(
                 console.log("hero NOT Intersecting");
                 header.classList.remove("active-hero");
                 homeBtn.classList.add("active");
+                bottomNav.classList.add("active-bottom-nav");
 
             } else {
                 console.log("hero is intersecting");
                 header.classList.add("active-hero");
                 homeBtn.classList.remove("active");
+                bottomNav.classList.remove("active-bottom-nav");
             }
         })
     }, heroOptions

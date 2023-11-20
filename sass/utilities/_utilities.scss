@@ -22,8 +22,10 @@
     place-items: center;
     transform: translateY(20vh);
     transition: 1s;
-    @media (min-width: 768px){
-        right: 2vw;
+    display: none;
+    @include abstracts.lg {
+        display: grid;
+        right: 5vw;
     }
     a {
         text-decoration: none;
