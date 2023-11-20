@@ -6,11 +6,26 @@
     .about-article {
         max-width: 800px;
         p {
+            text-wrap: balance;
+            line-height: 1.8;
             font-family: sans-serif;
             &:nth-child(1){
                 margin-bottom: 1rem;
             }
-            span {
+            
+
+            a {
+                display: block;
+                color: abstracts.$brand-gold;
+                text-transform: capitalize;
+                text-decoration: underline;
+            }
+
+        }
+
+        .article-intro {
+            
+            &::first-letter {
                 font-size: 2rem;
                 background-color: #000;
                 padding: 0 .2rem;
@@ -23,12 +38,6 @@
                 margin-right: 0.15em;
             }
 
-            a {
-                display: block;
-                color: abstracts.$brand-gold;
-                text-transform: capitalize;
-                text-decoration: underline;
-            }
         }
     }
 

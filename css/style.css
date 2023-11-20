@@ -211,12 +211,20 @@ a {
   max-width: 800px;
 }
 .about .about-article p {
+  text-wrap: balance;
+  line-height: 1.8;
   font-family: sans-serif;
 }
 .about .about-article p:nth-child(1) {
   margin-bottom: 1rem;
 }
-.about .about-article p span {
+.about .about-article p a {
+  display: block;
+  color: #a16e14;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+.about .about-article .article-intro::first-letter {
   font-size: 2rem;
   background-color: #000;
   padding: 0 0.2rem;
@@ -227,12 +235,6 @@ a {
   border-radius: 5px;
   float: left;
   margin-right: 0.15em;
-}
-.about .about-article p a {
-  display: block;
-  color: #a16e14;
-  text-transform: capitalize;
-  text-decoration: underline;
 }
 @media (min-width: 768px) {
   .about {
