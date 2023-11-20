@@ -60,7 +60,7 @@ heroObserver.observe(hero);
 const ioItem = document.querySelectorAll('.io-item');
 console.log(ioItem);
 itemOptions= {
-    rootMargin: '0px 0px 0px 0px',
+    rootMargin: '0px 0px -20% 0px',
 };
 
 ioItem.forEach(item => {
