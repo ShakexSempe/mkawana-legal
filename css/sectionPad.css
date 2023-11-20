@@ -1,5 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Montserrat:wght@200;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;700&display=swap");
+@font-face {
+  font-family: "Prompt";
+  src: url("../fonts/prompt-light-webfont.woff2") format("woff2"), url("../fonts/prompt-light-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("../fonts/prompt-regular-webfont.woff2") format("woff2"), url("../fonts/prompt-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("../fonts/prompt-medium-webfont.woff2") format("woff2"), url("../fonts/prompt-medium-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("../fonts/prompt-semibold-webfont.woff2") format("woff2"), url("../fonts/prompt-semibold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("../fonts/prompt-bold-webfont.woff2") format("woff2"), url("../fonts/prompt-bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
 .section-pad {
   min-height: 100vh;
   width: 100%;

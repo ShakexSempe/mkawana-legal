@@ -1,9 +1,9 @@
-@use '../abstracts/variables';
+@use '../abstracts';
 
 footer {
     min-height: 90vh;
     width: 100%;
-    background: variables.$brand-dark;
+    background: abstracts.$brand-dark;
     background: linear-gradient(0deg, #000, #161616);
     background: #ffff;
     display: flex;
@@ -42,13 +42,12 @@ footer {
     .copyright {
         // border: 1px dashed yellow;
         padding: 5vh 5vw;
-        text-align: center;
-        display: grid;
-        place-items: center;
         p {
-            color: #f4f4f4;
             color: #000;
             text-transform: capitalize;
+            a {
+                color: abstracts.$brand-gold;
+            }
         }
 
         span {

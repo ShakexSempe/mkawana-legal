@@ -82,7 +82,7 @@
         content: '';
         position: absolute;
         inset: 0;
-        border-radius: 5px;
+        border-radius: inherit;
         transition: 250ms;
         z-index: -1;
         background-color: abstracts.$brand-gold;

@@ -1,5 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Montserrat:wght@200;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;700&display=swap");
+@font-face {
+  font-family: "Prompt";
+  src: url("../fonts/prompt-light-webfont.woff2") format("woff2"), url("../fonts/prompt-light-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("../fonts/prompt-regular-webfont.woff2") format("woff2"), url("../fonts/prompt-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("../fonts/prompt-medium-webfont.woff2") format("woff2"), url("../fonts/prompt-medium-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("../fonts/prompt-semibold-webfont.woff2") format("woff2"), url("../fonts/prompt-semibold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("../fonts/prompt-bold-webfont.woff2") format("woff2"), url("../fonts/prompt-bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5vh;
@@ -7,11 +41,11 @@ html {
 
 body {
   line-height: 1.5;
-  font-family: sans-serif;
+  font-family: "Prompt", sans-serif;
 }
 body p {
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.1rem);
   font-weight: 400;
 }
 body .icon {
@@ -337,14 +371,13 @@ footer .footer-logo figure.active-content img {
 }
 footer .copyright {
   padding: 5vh 5vw;
-  text-align: center;
-  display: grid;
-  place-items: center;
 }
 footer .copyright p {
-  color: #f4f4f4;
   color: #000;
   text-transform: capitalize;
+}
+footer .copyright p a {
+  color: #a16e14;
 }
 footer .copyright span {
   color: #000;
@@ -627,13 +660,20 @@ header.active-hero nav .mobile-links {
   text-transform: capitalize;
   font-size: 2rem;
   font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 0;
   text-wrap: balance;
   max-width: 500px;
   line-height: 1.2;
 }
+.hero .hero-title h1 span {
+  color: #a16e14;
+}
 .hero .hero-subtitle {
   grid-area: subtitle;
   margin-bottom: 1rem;
+}
+.hero .hero-subtitle p {
+  font-weight: 300;
 }
 .hero .hero-cta {
   grid-area: cta;
@@ -656,6 +696,7 @@ header.active-hero nav .mobile-links {
   height: 100%;
   object-position: 100% 50%;
   object-fit: cover;
+  border-radius: 5px;
 }
 @media (min-width: 576px) {
   .hero .hero-image img {
@@ -877,7 +918,7 @@ header.active-hero nav .mobile-links {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 5px;
+  border-radius: inherit;
   transition: 250ms;
   z-index: -1;
   background-color: #a16e14;

@@ -50,9 +50,14 @@
             text-transform: capitalize;
             font-size: 2rem;
             font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 00;
             text-wrap: balance;
             max-width: 500px;
             line-height: 1.2;
+
+            span {
+                color: abstracts.$brand-gold;
+            }
         }
 
     }
@@ -61,6 +66,10 @@
         // padding-left: 5vw;
         grid-area: subtitle;
         margin-bottom: 1rem;
+
+        p {
+            font-weight: 300;
+        }
     }
 
     .hero-cta {
@@ -77,8 +86,8 @@
         width: 100%;
 
         @include abstracts.sm {
-            // padding-inline: 5vw;
             border-radius: 10px;
+            // padding-inline: 5vw;
         }
 
         img {
@@ -87,6 +96,7 @@
             height: 100%;
             object-position: 100% 50%;
             object-fit: cover;
+            border-radius: 5px;
             @include abstracts.sm {
                 object-position: center;
             }
