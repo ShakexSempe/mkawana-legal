@@ -7,7 +7,7 @@
     // outline-color: blue;
     height: 90vh;
     width: 100%;
-    padding: 20vh 5vw 10vh;
+    padding: 20vh 5vw 0vh;
     position: relative;
     isolation: isolate;
     
@@ -15,11 +15,11 @@
     gap: 1rem;
     grid-template-areas: 'title' 'image' 'cta';
     // grid-template-rows: auto auto auto 1fr;
-    grid-template-rows: auto 60% auto;
+    grid-template-rows: auto 1fr auto;
     
 
-
-    @include abstracts.md {
+    @include abstracts.lg {
+    padding: 20vh 5vw 5vh;
         height: 100vh;
         grid-template-columns: 1fr 1fr 20rem;
         grid-template-rows: auto 1fr;

@@ -622,7 +622,7 @@ header.active-hero nav .mobile-links {
 }
 @media (min-width: 1024px) {
   header.active-hero {
-    background-color: transparent;
+    background-color: #fff;
   }
   header.active-hero nav .desktop-links ul li a {
     color: #fff;
@@ -633,16 +633,17 @@ header.active-hero nav .mobile-links {
 .hero {
   height: 90vh;
   width: 100%;
-  padding: 20vh 5vw 10vh;
+  padding: 20vh 5vw 0vh;
   position: relative;
   isolation: isolate;
   display: grid;
   gap: 1rem;
   grid-template-areas: "title" "image" "cta";
-  grid-template-rows: auto 60% auto;
+  grid-template-rows: auto 1fr auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .hero {
+    padding: 20vh 5vw 5vh;
     height: 100vh;
     grid-template-columns: 1fr 1fr 20rem;
     grid-template-rows: auto 1fr;
