@@ -50,7 +50,7 @@ body {
 }
 body p {
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: clamp(1rem, 2vw, 1.125rem);
   font-weight: 400;
 }
 body .icon {
@@ -99,6 +99,9 @@ a {
   transition: 0.25s;
 }
 
+.about {
+  background-image: linear-gradient(-30deg, #f4f4f4 40%, #fff 45%);
+}
 .about .about-article {
   max-width: 800px;
 }
@@ -126,12 +129,10 @@ a {
   text-transform: capitalize;
   text-decoration: underline;
 }
-@media (min-width: 1024px) {
-  .about .about-article p {
-    font-size: 1.25rem;
-  }
-  .about .about-article p span {
-    font-size: 2.5rem;
+@media (min-width: 768px) {
+  .about {
+    background-attachment: fixed;
+    background-image: linear-gradient(40deg, #fff 60%, #f4f4f4 45%);
   }
 }
 

@@ -1,6 +1,8 @@
-@use '../abstracts/variables';
+@use '../abstracts';
 
 .about {
+    background-image: linear-gradient(-30deg, #f4f4f4 40%, #fff 45%);
+
     .about-article {
         max-width: 800px;
         p {
@@ -14,7 +16,7 @@
                 padding: 0 .2rem;
                 color: #ead2a1;
                 color: #fff;
-                text-shadow: .1rem .1rem 0px variables.$brand-gold;
+                text-shadow: .1rem .1rem 0px abstracts.$brand-gold;
                 box-shadow: 3px 3px 0px rgba(0,0,0,.2);
                 border-radius: 5px;
                 float: left;
@@ -23,26 +25,17 @@
 
             a {
                 display: block;
-                color: variables.$brand-gold;
+                color: abstracts.$brand-gold;
                 text-transform: capitalize;
                 text-decoration: underline;
             }
         }
+    }
 
-        .cta {
-            // display: block;
-            // width: 10rem;
-            // position: relative;
-        }
-        // DESKTOP ARTICLE
-        @media (min-width: 1024px){
-            p {
-                font-size: 1.25rem;
 
-                span {
-                    font-size: 2.5rem;
-                }
-            }
-        }
+    // DESKTOP SECTION STYLE
+    @include abstracts.md {
+        background-attachment: fixed;
+        background-image: linear-gradient(40deg, #fff 60%, #f4f4f4 45%);
     }
 }
