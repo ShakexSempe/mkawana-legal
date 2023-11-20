@@ -38,6 +38,11 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 5vh;
 }
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 10vh;
+  }
+}
 
 body {
   line-height: 1.5;
@@ -94,6 +99,12 @@ a {
   transition: 0.25s;
 }
 
+.about .about-article {
+  max-width: 800px;
+}
+.about .about-article p {
+  font-family: sans-serif;
+}
 .about .about-article p:nth-child(1) {
   margin-bottom: 1rem;
 }
@@ -673,7 +684,8 @@ header.active-hero nav .mobile-links {
   margin-bottom: 1rem;
 }
 .hero .hero-subtitle p {
-  font-weight: 300;
+  font-weight: 400;
+  font-family: sans-serif;
 }
 .hero .hero-cta {
   grid-area: cta;
@@ -712,7 +724,6 @@ header.active-hero nav .mobile-links {
   padding: 10vh 5vw;
 }
 .main .section .section-title {
-  text-align: center;
   margin-bottom: 5vh;
   overflow: hidden;
 }
@@ -720,10 +731,14 @@ header.active-hero nav .mobile-links {
   color: #000;
   text-transform: uppercase;
   font-size: 2rem;
-  transform: translateY(-10vh);
   transition: 1s;
 }
+.main .section .section-title.io-item h2 {
+  transform: translateY(-5vh);
+  opacity: 0;
+}
 .main .section .section-title.active-item h2 {
+  opacity: 1;
   transform: translateY(0);
 }
 

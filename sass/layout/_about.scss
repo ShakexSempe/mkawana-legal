@@ -2,9 +2,9 @@
 
 .about {
     .about-article {
-        // border: 1px solid variables.$brand-gold;
-
+        max-width: 800px;
         p {
+            font-family: sans-serif;
             &:nth-child(1){
                 margin-bottom: 1rem;
             }

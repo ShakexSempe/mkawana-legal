@@ -3,6 +3,10 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 5vh;
+
+    @include abstracts.md {
+        scroll-padding-top: 10vh;
+    }
 }
 
 body {
@@ -13,6 +17,7 @@ body {
         font-size: 1rem;
         font-size: abstracts.$font-clamp-sm;
         font-weight: 400;
+        
     }
 
     .icon {
