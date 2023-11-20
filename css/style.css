@@ -597,14 +597,13 @@ header.active-hero nav .mobile-links {
   position: relative;
   isolation: isolate;
   display: grid;
-  grid-template-rows: auto 60%;
-  row-gap: 1rem;
+  gap: 1rem;
+  grid-template-areas: "title" "image" "subtitle" "cta";
+  grid-template-rows: auto 60% auto auto;
 }
 @media (min-width: 768px) {
   .hero {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding: 25vh 0vw 10vh;
+    opacity: 0.2;
   }
 }
 .hero::after {
@@ -621,21 +620,36 @@ header.active-hero nav .mobile-links {
 }
 .hero .hero-title {
   color: #000;
-  padding-inline: 5vw;
+  padding-left: 5vw;
+  grid-area: title;
 }
 .hero .hero-title h1 {
   text-transform: capitalize;
   font-size: 2rem;
   text-wrap: balance;
   line-height: 1.2;
-  margin-bottom: 1rem;
+}
+.hero .hero-subtitle {
+  padding-left: 5vw;
+  grid-area: subtitle;
+}
+.hero .hero-cta {
+  grid-area: cta;
+  padding-left: 5vw;
+}
+.hero .hero-cta .cta {
+  margin: 0;
+}
+.hero .hero-image {
+  grid-area: image;
+  overflow: hidden;
+  width: 100%;
 }
 .hero .hero-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .main {
   background-color: #fff;
 }
