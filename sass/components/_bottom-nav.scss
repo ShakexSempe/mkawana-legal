@@ -5,21 +5,21 @@
     // DISPLAY NONE ON WIDER SCREENS
     @include abstracts.lg {
         display: none;
-        height: 7vh;
     }
     // BOTTOM NAV STYLE = FLEX CONTAINER FIXED TO BOTTOM
     position: fixed;
     bottom: 0;
     width: 100%;
-    // background: abstracts.$overlay-footer;
+    padding: 0 5vw;
     background: #000;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
-    padding: 0 5vw;
-    transform: translateY(15vh);
-    transition: 1s;
+    
+    transform: translateY(10vh);
+    transition: 500ms ease-out;
 
     // BOTTOM NAV ITEM = FLEX ITEM[A LINK ICON]
     .link-item {
