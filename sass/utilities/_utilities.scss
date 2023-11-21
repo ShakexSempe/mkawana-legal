@@ -127,3 +127,24 @@
     }
 
 }
+
+.skip-link {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    background: abstracts.$brand;
+    color: #fff;
+    z-index: 99;
+    transition: .25s;
+    transform: translateY(-10vh);
+
+    &:focus {
+        transform: translateY(0);
+        text-decoration: underline;
+    }
+}

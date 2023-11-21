@@ -1134,6 +1134,26 @@ header.active-hero nav .mobile-links {
   }
 }
 
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  background: #a16e14;
+  color: #fff;
+  z-index: 99;
+  transition: 0.25s;
+  transform: translateY(-10vh);
+}
+.skip-link:focus {
+  transform: translateY(0);
+  text-decoration: underline;
+}
+
 .section-pad {
   min-height: 100vh;
   width: 100%;
