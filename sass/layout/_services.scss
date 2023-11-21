@@ -14,7 +14,26 @@
             padding: 1rem;
             position: relative;
             isolation: isolate;
-            box-shadow: 0.125rem 0.5rem 1rem #0002;
+            
+            // PSEUDO BG & SHADOW
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: #fff;
+                z-index: -1;
+                border-radius: inherit;
+                opacity: 0;
+                transition: 500ms;
+            }
+            &::before {
+                transition-timing-function: ease-in;
+                box-shadow: 0.125rem 0.5rem 0.5rem hsla(0, 0%, 0%, 0.1);
+            }
+            &::after {
+                transition-timing-function: ease-out;
+                box-shadow: 0.0125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.25);
+            }
 
             @include abstracts.md {
                 height: 350px;
@@ -45,7 +64,7 @@
                 h3 {
                     text-transform: uppercase;
                     font-size: 1.025rem;
-                    color: abstracts.$brand-gold;
+                    color: abstracts.$text-main;
                     margin-bottom: 0.5rem;
                 }
             }
@@ -126,20 +145,26 @@
                 }
             }
 
+            &.io-content {
+                transform: scale(0.98);
+            }
             // IO ACTIVE CLASS
             &.active-content {
-                transition: 1.5s, background-color .2s;
-                &::after {
+                transition: 500ms ease-in-out;
+                transform: scale(1);
+                &::before {
                     opacity: 1;
-                }
-                .service-title {
-                    h3 {
-                        color: #000;
-                        transition: 1.5s;
-                    }
                 }
 
                 &:hover {
+                    transform: scale(1.0125);
+                    transition: 500ms;
+                    &::before {
+                        opacity: 0;
+                    }
+                    &::after {
+                        opacity: 1;
+                    }
                     .service-title {
                         h3 {
                             color: abstracts.$brand-gold;
@@ -157,16 +182,6 @@
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
 
-            // .service-item {
-            //     border-radius: 10px;
-            //     height: auto;
-            //     overflow: hidden;
-            //     .service-title {
-            //         figure {
-            //         margin: 0 auto;
-            //         }
-            //     }
-            // }
         }
 
         // DESKTOP CONTAINER 

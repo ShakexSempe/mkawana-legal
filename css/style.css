@@ -888,7 +888,24 @@ header.active-hero nav .mobile-links {
   padding: 1rem;
   position: relative;
   isolation: isolate;
-  box-shadow: 0.125rem 0.5rem 1rem #0002;
+}
+.services .services-container .service-item::before, .services .services-container .service-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 500ms;
+}
+.services .services-container .service-item::before {
+  transition-timing-function: ease-in;
+  box-shadow: 0.125rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.services .services-container .service-item::after {
+  transition-timing-function: ease-out;
+  box-shadow: 0.0125rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 @media (min-width: 768px) {
   .services .services-container .service-item {
@@ -916,7 +933,7 @@ header.active-hero nav .mobile-links {
 .services .services-container .service-item .service-title h3 {
   text-transform: uppercase;
   font-size: 1.025rem;
-  color: #a16e14;
+  color: #000;
   margin-bottom: 0.5rem;
 }
 .services .services-container .service-item .content p {
@@ -975,15 +992,25 @@ header.active-hero nav .mobile-links {
     transition: transform 0.5s;
   }
 }
-.services .services-container .service-item.active-content {
-  transition: 1.5s, background-color 0.2s;
+.services .services-container .service-item.io-content {
+  transform: scale(0.98);
 }
-.services .services-container .service-item.active-content::after {
+.services .services-container .service-item.active-content {
+  transition: 500ms ease-in-out;
+  transform: scale(1);
+}
+.services .services-container .service-item.active-content::before {
   opacity: 1;
 }
-.services .services-container .service-item.active-content .service-title h3 {
-  color: #000;
-  transition: 1.5s;
+.services .services-container .service-item.active-content:hover {
+  transform: scale(1.0125);
+  transition: 500ms;
+}
+.services .services-container .service-item.active-content:hover::before {
+  opacity: 0;
+}
+.services .services-container .service-item.active-content:hover::after {
+  opacity: 1;
 }
 .services .services-container .service-item.active-content:hover .service-title h3 {
   color: #a16e14;
