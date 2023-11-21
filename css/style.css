@@ -801,11 +801,6 @@ header.active-hero nav .mobile-links {
   grid-area: subtitle;
   margin-bottom: 0.5rem;
 }
-@media (min-width: 576px) {
-  .hero .hero-subtitle {
-    margin-bottom: 0;
-  }
-}
 .hero .hero-subtitle p {
   font-weight: 400;
   font-family: sans-serif;
@@ -945,6 +940,25 @@ header.active-hero nav .mobile-links {
 }
 .services .services-container .service-item .content .cta {
   margin: 1rem 0;
+}
+.services .services-container .service-item .content a {
+  color: #a16e14;
+  width: 60%;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: capitalize;
+  cursor: default;
+}
+@media (min-width: 768px) {
+  .services .services-container .service-item .content a {
+    cursor: pointer;
+  }
+}
+.services .services-container .service-item .content a:hover .icon {
+  transform: translateX(0.25rem);
 }
 @media (min-width: 768px) {
   .services .services-container .service-item .content .cta {

@@ -71,9 +71,6 @@
         // padding-left: 5vw;
         grid-area: subtitle;
         margin-bottom: 0.5rem;
-        @include abstracts.sm {
-            margin-bottom: 0;
-        }
 
         p {
             font-weight: 400;

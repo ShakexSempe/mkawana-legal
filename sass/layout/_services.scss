@@ -53,6 +53,7 @@
             }
 
             .content {
+
                 p {
                     padding-bottom: 0.25rem;
                     // text-transform: sente;
@@ -66,6 +67,28 @@
                 // CTA MARGIN AUTO = CENTER ALIGNED
                 .cta {
                     margin: 1rem 0;
+                }
+
+                a {
+                    color: abstracts.$brand-gold;
+                    width: 60%;
+                    margin: 1rem 0;
+                    padding: 0.5rem 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    text-transform: capitalize;
+                    cursor: default;
+
+                    @include abstracts.md {
+                        cursor: pointer;
+                    }
+
+                    &:hover {
+                        .icon {
+                            transform: translateX(0.25rem);
+                        }
+                    }
                 }
 
                 // DESKTOP CTA
