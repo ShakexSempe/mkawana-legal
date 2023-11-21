@@ -34,24 +34,22 @@
                 }
             }
 
+            // IO CLASS
             &.io-item {
                 
                 h2 {
-                    opacity: 0;
-                    transform: translateY(-5vh);
 
                     &::after {
                     transform: translateX(-100%);
                     }
+
                 }
 
             }
-
+            // ACTIVE IO CLASS
             &.active-item {
                 
                 h2 {
-                    opacity: 1;
-                    transform: translateY(0);
                     
                     &::after {
                         transition: 1s ease-out;
