@@ -12,7 +12,7 @@
     isolation: isolate;
     
     display: grid;
-    gap: 1rem;
+    // gap: 1rem;
     grid-template-areas: 'title' 'image' 'cta';
     grid-template-areas: 'image' 'title' 'cta';
     grid-template-rows: auto 1fr auto;
@@ -45,10 +45,10 @@
     }
 
     .hero-title {
-        color: #000;
-        // padding-left: 5vw;
         grid-area: title;
-        // grid-area: title;
+        color: #000;
+        margin-bottom: 0.5rem;
+
         h1 {
             text-transform: capitalize;
             font-size: 2rem;
@@ -88,6 +88,7 @@
         grid-area: image;
         overflow: hidden;
         width: 100%;
+        margin-bottom: 1rem;
 
         @include abstracts.sm {
             border-radius: 10px;
