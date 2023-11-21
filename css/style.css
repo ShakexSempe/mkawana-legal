@@ -53,7 +53,7 @@ body a:focus {
 }
 body p {
   font-size: 1rem;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1.025rem);
   font-weight: 400;
 }
 body .icon {
@@ -915,13 +915,13 @@ header.active-hero nav .mobile-links {
 }
 .services .services-container .service-item .service-title h3 {
   text-transform: uppercase;
-  font-size: 1.25rem;
+  font-size: 1.025rem;
   color: #a16e14;
   margin-bottom: 0.5rem;
 }
 .services .services-container .service-item .content p {
   padding-bottom: 0.25rem;
-  border-bottom: 1px solid #a16e14;
+  border-bottom: 1px solid #000;
   transition: 0.5s;
   overflow: hidden;
   text-wrap: balance;
@@ -984,16 +984,6 @@ header.active-hero nav .mobile-links {
 .services .services-container .service-item.active-content .service-title h3 {
   color: #000;
   transition: 1.5s;
-}
-.services .services-container .service-item.active-content .content p {
-  border-bottom: 1px solid #000;
-  transition: 1.5s;
-}
-.services .services-container .service-item.active-content .content a {
-  transition: 0.2s;
-}
-.services .services-container .service-item.active-content .content a::after, .services .services-container .service-item.active-content .content a::before {
-  transition: 0.2s;
 }
 .services .services-container .service-item.active-content:hover .service-title h3 {
   color: #a16e14;
