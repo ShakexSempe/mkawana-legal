@@ -777,9 +777,19 @@ header.active-hero nav .mobile-links {
 .hero .hero-title h1 span {
   color: #a16e14;
 }
+@media (min-width: 576px) {
+  .hero .hero-title {
+    margin-bottom: 0;
+  }
+}
 .hero .hero-subtitle {
   grid-area: subtitle;
   margin-bottom: 0.5rem;
+}
+@media (min-width: 576px) {
+  .hero .hero-subtitle {
+    margin-bottom: 0;
+  }
 }
 .hero .hero-subtitle p {
   font-weight: 400;
@@ -800,6 +810,7 @@ header.active-hero nav .mobile-links {
 @media (min-width: 576px) {
   .hero .hero-image {
     border-radius: 10px;
+    margin-bottom: 0;
   }
 }
 .hero .hero-image img {
