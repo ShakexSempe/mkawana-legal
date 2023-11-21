@@ -12,9 +12,11 @@
     isolation: isolate;
     
     display: grid;
-    gap: 0.5rem;
+    gap: 1rem;
     grid-template-areas: 'title' 'image' 'cta';
+    grid-template-areas: 'image' 'title' 'cta';
     grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr auto auto;
     
 
     @include abstracts.lg {
@@ -49,7 +51,7 @@
         h1 {
             text-transform: capitalize;
             font-size: 2rem;
-            font-size: clamp(2rem, 5vw, 3rem);
+            font-size: clamp(1.8rem, 5vw, 3rem);
             font-weight: 00;
             text-wrap: balance;
             max-width: 500px;

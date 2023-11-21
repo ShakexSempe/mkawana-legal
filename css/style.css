@@ -744,9 +744,11 @@ header.active-hero nav .mobile-links {
   position: relative;
   isolation: isolate;
   display: grid;
-  gap: 0.5rem;
+  gap: 1rem;
   grid-template-areas: "title" "image" "cta";
+  grid-template-areas: "image" "title" "cta";
   grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr auto auto;
 }
 @media (min-width: 820px) {
   .hero {
@@ -776,7 +778,7 @@ header.active-hero nav .mobile-links {
 .hero .hero-title h1 {
   text-transform: capitalize;
   font-size: 2rem;
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: 0;
   text-wrap: balance;
   max-width: 500px;
