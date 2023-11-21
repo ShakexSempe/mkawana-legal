@@ -937,6 +937,7 @@ header.active-hero nav .mobile-links {
   margin-bottom: 0.5rem;
 }
 .services .services-container .service-item .content p {
+  font-size: 1rem;
   padding-bottom: 0.25rem;
   border-bottom: 1px solid #000;
   transition: 0.5s;
