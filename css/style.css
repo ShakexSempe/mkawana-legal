@@ -459,77 +459,66 @@ a {
 }
 
 footer {
-  min-height: 90vh;
-  width: 100%;
-  background: #010304;
-  background: linear-gradient(0deg, #000, #161616);
   background: #ffff;
+  color: #000;
+  width: 100%;
+  padding: 5vh 5vw 10vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-footer .footer-logo {
-  background: #ffff;
-  display: grid;
-  place-items: center;
-}
-footer .footer-logo figure {
-  width: 90%;
-  height: 100%;
-  overflow: hidden;
-}
-footer .footer-logo figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  opacity: 0;
-  transition: 2s ease;
-  background-color: #fff;
-}
-footer .footer-logo figure.active-content img {
-  transform: translateY(0);
-  opacity: 1;
-}
-footer .copyright {
-  padding: 5vh 5vw;
-}
-footer .copyright p {
-  color: #000;
-  text-transform: capitalize;
-}
-footer .copyright p a {
-  color: #a16e14;
-}
-footer .copyright span {
-  color: #000;
+  gap: 5vh;
 }
 @media (min-width: 1024px) {
   footer {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 0 5vw;
-    background: #fff;
+    gap: 0.5rem;
   }
-  footer .footer-logo {
-    width: 50%;
-  }
-  footer .footer-logo figure {
-    width: 15rem;
-    width: 100%;
-    height: 15rem;
-  }
-  footer .copyright {
-    width: 50%;
-    padding: 5vh 0;
-    text-align: left;
-    font-size: 1.5rem;
-  }
-  footer .copyright p {
-    color: #000;
-  }
-  footer .copyright span {
-    color: #000;
-  }
+}
+footer .footer-logo {
+  width: 15rem;
+}
+footer .footer-logo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+footer .footer-item-title {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-size: clamp(1.125rem, 2vw, 1.15rem);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+footer p, footer a, footer span {
+  font-family: sans-serif;
+}
+footer .copyright {
+  text-transform: capitalize;
+}
+footer .copyright p {
+  margin-bottom: 0.25rem;
+}
+footer .copyright a {
+  text-decoration: underline 1px solid #a16e14;
+}
+footer .footer-item ul {
+  list-style: none;
+}
+footer .footer-item ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+footer .footer-item ul li a {
+  width: 65%;
+}
+footer .footer-item ul li a:hover {
+  color: #a16e14;
+}
+footer .footer-item ul li:hover .icon {
+  transform: translateX(0.25rem);
 }
 
 header {

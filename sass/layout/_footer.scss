@@ -1,87 +1,82 @@
 @use '../abstracts';
 
 footer {
-    min-height: 90vh;
-    width: 100%;
-    background: abstracts.$brand-dark;
-    background: linear-gradient(0deg, #000, #161616);
+    // outline-color: red;
     background: #ffff;
+    color: #000;
+    
+    // min-height: 90vh;
+    width: 100%;
+    padding: 5vh 5vw 10vh;
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 5vh;
+
+    @include abstracts.xlg {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
 
     .footer-logo {
-        // border: 3px solid #fff000;
-        background: #ffff;
-        display: grid;
-        place-items: center;
-        figure {
-            width: 90%;
-            height: 100%;
-            overflow: hidden;
-            // background-color: variables.$brand-gold;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                // transform: translateY(-100%);
-                opacity: 0;
-                transition: 2s ease;
-                background-color: #fff;
-            }
+        width: 15rem;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    .footer-item-title {
+        text-transform: capitalize;
+        font-size: 1rem;
+        font-size: clamp(1.125rem, 2vw, 1.15rem);
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+    
+    p, a, span {
+        font-family: sans-serif;
+    }
 
-            &.active-content {
-                img {
-                    transform: translateY(0);
-                    opacity: 1;
+    .copyright {
+        text-transform: capitalize;
+        p {
+            margin-bottom: 0.25rem;
+        }
+        a {
+            text-decoration: underline 1px solid abstracts.$brand-gold;
+        }
+    }
+
+    .footer-item {
+        ul {
+            list-style: none;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin-bottom: 0.25rem;
+
+                a {
+                    width: 65%;
+                    &:hover {
+                        color: abstracts.$brand-gold;
+                    }
+                }
+
+                &:hover {
+                    .icon {
+                        transform: translateX(0.25rem);
+                    }
                 }
             }
         }
     }
 
-    .copyright {
-        // border: 1px dashed yellow;
-        padding: 5vh 5vw;
-        p {
-            color: #000;
-            text-transform: capitalize;
-            a {
-                color: abstracts.$brand-gold;
-            }
-        }
-
-        span {
-            color: #000;
-        }
-    }
 
 
-    @media (min-width: 1024px){
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        padding: 0 5vw;
-        background: #fff;
-        .footer-logo {
-            width: 50%;
-            figure {
-                width: 15rem;
-                width: 100%;
-                height: 15rem;
-                // border: 1px solid red;
-            }
-        }
-        .copyright {
-            width: 50%;
-            padding: 5vh 0;
-            text-align: left;
-            font-size: 1.5rem;
-            p {
-                color: #000;
-                
-            }
-            span {
-                color: #000;
-            }
-        }
-    }
+
 }
