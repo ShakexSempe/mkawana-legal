@@ -857,14 +857,35 @@ header.active-hero nav .mobile-links {
   text-transform: uppercase;
   font-size: 2rem;
   transition: 1s;
+  position: relative;
+  width: max-content;
+}
+.main .section .section-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  background: #a16e14;
+  transition: 1s;
 }
 .main .section .section-title.io-item h2 {
-  transform: translateY(-5vh);
   opacity: 0;
+  transform: translateY(-5vh);
+}
+.main .section .section-title.io-item h2::after {
+  transform: translateX(-100%);
 }
 .main .section .section-title.active-item h2 {
   opacity: 1;
   transform: translateY(0);
+}
+.main .section .section-title.active-item h2::after {
+  transition: 1s ease-out;
+  transition-delay: 500ms;
+  transform: translateX(0);
 }
 
 .services {
