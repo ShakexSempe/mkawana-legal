@@ -63,6 +63,9 @@
                     overflow: hidden;
                     text-wrap: balance;
                     font-family: sans-serif;
+                    @include abstracts.md {
+                        height: 10vh;
+                    }
                 }
                 // CTA MARGIN AUTO = CENTER ALIGNED
                 .cta {
@@ -82,9 +85,12 @@
 
                     @include abstracts.md {
                         cursor: pointer;
+                        width: 100%;
+                        text-align: center;
+                        justify-content: center;
                     }
 
-                    &:hover {
+                    &:hover, &:focus {
                         .icon {
                             transform: translateX(0.25rem);
                         }

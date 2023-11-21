@@ -938,6 +938,11 @@ header.active-hero nav .mobile-links {
   text-wrap: balance;
   font-family: sans-serif;
 }
+@media (min-width: 768px) {
+  .services .services-container .service-item .content p {
+    height: 10vh;
+  }
+}
 .services .services-container .service-item .content .cta {
   margin: 1rem 0;
 }
@@ -955,9 +960,12 @@ header.active-hero nav .mobile-links {
 @media (min-width: 768px) {
   .services .services-container .service-item .content a {
     cursor: pointer;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 }
-.services .services-container .service-item .content a:hover .icon {
+.services .services-container .service-item .content a:hover .icon, .services .services-container .service-item .content a:focus .icon {
   transform: translateX(0.25rem);
 }
 @media (min-width: 768px) {
