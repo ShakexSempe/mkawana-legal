@@ -12,7 +12,7 @@
     isolation: isolate;
     
     display: grid;
-    gap: 0.5rem;
+    gap: 1rem;
     grid-template-areas: 'title' 'image' 'cta';
     grid-template-areas: 'image' 'title' 'cta';
     grid-template-rows: auto 1fr auto;
