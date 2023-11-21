@@ -42,13 +42,11 @@ const heroObserver = new IntersectionObserver(
             if(!entry.isIntersecting){
                 console.log("hero NOT Intersecting");
                 header.classList.remove("active-hero");
-                homeBtn.classList.add("active");
                 bottomNav.classList.add("active-bottom-nav");
 
             } else {
                 console.log("hero is intersecting");
                 header.classList.add("active-hero");
-                homeBtn.classList.remove("active");
                 bottomNav.classList.remove("active-bottom-nav");
             }
         })
