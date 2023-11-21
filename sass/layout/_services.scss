@@ -12,16 +12,20 @@
             border-radius: 10px;
             background: #fff;
             padding: 1rem;
-            height: 350px;
+            // height: 350px;
             position: relative;
             isolation: isolate;
             box-shadow: 0.125rem 0.5rem 1rem #0002;
 
-            @media (max-width: 768px){
-                max-height: 55vh;
+            // @media (max-width: 768px){
+            //     max-height: 55vh;
+            // }
+            @include abstracts.md {
+                height: 350px;
             }
 
             .service-title {
+                
                 figure {
                     // border: 1px solid red;
                     width: 5rem;
@@ -29,18 +33,16 @@
                     overflow: hidden;
                     display: grid;
                     place-items: center;
-                    margin: 1rem 0;
+                    margin-bottom: 0.5rem;
 
-                    img {
-                        object-fit: contain;
-                        height: 100%;
-                        width: 100%;
-                        padding: .5rem;
+                    @include abstracts.md {
+                        margin: 0 auto 1rem;
                     }
 
-                    @media (min-width: 768px){
-                        width: 6.5rem;
-                        height: 6.5rem;
+                    img {
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
                     }
                 }
 
@@ -69,13 +71,13 @@
                 }
                 // CTA MARGIN AUTO = CENTER ALIGNED
                 .cta {
-                    margin: 1rem 0;
+                    margin: 1rem 0 0;
                 }
 
                 a {
                     color: abstracts.$brand-gold;
                     width: 60%;
-                    margin: 1rem 0;
+                    margin: 1rem 0 0;
                     padding: 0.5rem 0;
                     display: flex;
                     align-items: center;
@@ -171,16 +173,16 @@
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
 
-            .service-item {
-                border-radius: 10px;
-                height: auto;
-                overflow: hidden;
-                .service-title {
-                    figure {
-                    margin: 0 auto;
-                    }
-                }
-            }
+            // .service-item {
+            //     border-radius: 10px;
+            //     height: auto;
+            //     overflow: hidden;
+            //     .service-title {
+            //         figure {
+            //         margin: 0 auto;
+            //         }
+            //     }
+            // }
         }
 
         // DESKTOP CONTAINER 
