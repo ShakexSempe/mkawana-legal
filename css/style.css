@@ -221,6 +221,8 @@ a {
   margin-bottom: 1rem;
 }
 .about .about-article p a {
+  width: max-content;
+  padding-right: 1rem;
   display: block;
   color: #a16e14;
   text-transform: capitalize;
@@ -734,10 +736,6 @@ header.active-hero nav .mobile-links {
     background-color: #fff;
     height: 15vh;
   }
-  header.active-hero nav .desktop-links ul li a {
-    color: #fff;
-    color: #000;
-  }
 }
 
 .hero {
@@ -935,6 +933,7 @@ header.active-hero nav .mobile-links {
   font-size: clamp(1rem, 2vw, 1.025rem);
   color: #000;
   margin-bottom: 0.5rem;
+  transition: 125ms;
 }
 .services .services-container .service-item .content p {
   font-size: 1rem;
@@ -980,10 +979,6 @@ header.active-hero nav .mobile-links {
     margin: 1rem auto 0;
   }
 }
-.services .services-container .service-item:hover .service-title h3 {
-  transition: 0.3s;
-  color: #000;
-}
 @media (min-width: 768px) {
   .services .services-container .service-item:hover {
     transition: background-color 0.2s;
@@ -1015,7 +1010,6 @@ header.active-hero nav .mobile-links {
 }
 .services .services-container .service-item.active-content:hover .service-title h3 {
   color: #a16e14;
-  transition: 0.3s;
 }
 @media (min-width: 768px) {
   .services .services-container {

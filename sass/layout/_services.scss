@@ -67,6 +67,7 @@
                     font-size: abstracts.$font-clamp-sm;
                     color: abstracts.$text-main;
                     margin-bottom: 0.5rem;
+                    transition: 125ms;
                 }
             }
 
@@ -129,12 +130,7 @@
             }
 
             &:hover {
-                .service-title {
-                    h3 {
-                        transition: .3s;
-                        color: #000;
-                    }
-                }
+                
                 @media (min-width: 768px){
                     transition: background-color .2s;
                     .content {
@@ -169,7 +165,6 @@
                     .service-title {
                         h3 {
                             color: abstracts.$brand-gold;
-                            transition: .3s;
                         }
                     }
                 }
@@ -192,4 +187,5 @@
             gap: 4rem 2rem;
         }
     }
+    
 }
