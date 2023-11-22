@@ -780,7 +780,7 @@ header.active-hero nav .mobile-links {
 .hero .hero-title h1 {
   text-transform: capitalize;
   font-size: 2rem;
-  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-size: clamp(1.65rem, 5vw, 3rem);
   font-weight: 0;
   text-wrap: balance;
   max-width: 500px;
