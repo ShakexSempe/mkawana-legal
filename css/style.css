@@ -758,9 +758,13 @@ header.active-hero nav .mobile-links {
   grid-template-rows: auto 1fr auto;
   grid-template-rows: 1fr auto auto;
 }
-@media (min-width: 820px) {
+@media (min-width: 576px) {
   .hero {
     gap: 1rem;
+  }
+}
+@media (min-width: 820px) {
+  .hero {
     padding: 20vh 5vw 5vh;
     height: 100vh;
     grid-template-columns: 1fr 1fr 20rem;
@@ -789,7 +793,6 @@ header.active-hero nav .mobile-links {
   text-transform: capitalize;
   font-size: 2rem;
   font-size: clamp(1.65rem, 5vw, 3rem);
-  font-weight: 0;
   text-wrap: balance;
   max-width: 500px;
   line-height: 1.2;
