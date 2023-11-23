@@ -221,7 +221,7 @@ a {
   margin-bottom: 1rem;
 }
 .about .about-article p a {
-  width: max-content;
+  width: 50%;
   padding-right: 1rem;
   display: block;
   color: #a16e14;
