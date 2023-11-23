@@ -535,6 +535,14 @@ header {
   align-items: center;
   z-index: 10;
   transition: 500ms;
+  isolation: isolate;
+}
+header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  z-index: -1;
 }
 @media (min-width: 576px) {
   header {
@@ -569,13 +577,14 @@ header nav .mobile-links {
   top: 7vh;
   right: 0;
   width: 100%;
-  height: 0vh;
+  height: 55vh;
+  transform: translateY(-110%);
   background-color: #010304;
   color: #eee;
   border-bottom: 0px solid transparent;
   transition: 0.5s;
   overflow: hidden;
-  z-index: 1;
+  z-index: -10;
 }
 @media (min-width: 768px) {
   header nav .mobile-links {
@@ -583,7 +592,7 @@ header nav .mobile-links {
   }
 }
 header nav .mobile-links ul {
-  margin: 5vh 5vw;
+  margin: 5vh 5vw 5vh;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -619,7 +628,6 @@ header nav .mobile-links .social-links {
   overflow: hidden;
 }
 header nav .mobile-links .social-links a {
-  color: #ead2a1;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -637,7 +645,7 @@ header nav .mobile-links .social-links a:hover .icon {
 }
 header nav .mobile-links.active-menu {
   top: 7vh;
-  height: 55vh;
+  transform: translateY(0);
   border-bottom: 2px solid #a16e14;
 }
 header nav .mobile-links.active-menu .mobile-links {
@@ -1026,8 +1034,7 @@ header.active-hero nav .mobile-links {
 }
 
 .toggle {
-  cursor: pointer;
-  text-transform: capitalize;
+  cursor: default;
   text-transform: uppercase;
   position: absolute;
   right: 5vw;
