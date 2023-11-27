@@ -753,10 +753,11 @@ header.active-hero nav .mobile-links {
   position: relative;
   isolation: isolate;
   display: grid;
-  grid-template-areas: "title" "image" "cta";
   grid-template-areas: "image" "title" "cta";
-  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "title" "image" "cta";
   grid-template-rows: 1fr auto auto;
+  grid-template-rows: auto 50% auto;
+  grid-template-rows: auto 1fr auto;
 }
 @media (min-width: 576px) {
   .hero {
@@ -815,15 +816,30 @@ header.active-hero nav .mobile-links {
 }
 .hero .hero-cta {
   grid-area: cta;
+  text-align: right;
+  background: #fafafa;
+  padding: 0.5rem;
 }
 .hero .hero-cta .cta {
   margin: 0;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .hero .hero-cta {
+    text-align: left;
+    background: none;
+    padding: 0;
+  }
+  .hero .hero-cta .cta {
+    margin: 0;
+  }
 }
 .hero .hero-image {
   grid-area: image;
   overflow: hidden;
   width: 100%;
   margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 576px) {
   .hero .hero-image {
