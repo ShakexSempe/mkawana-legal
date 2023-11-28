@@ -895,7 +895,6 @@ header.active-hero nav .mobile-links {
 }
 .main .section .section-title.active-item h2::after {
   transition: 1s ease-out;
-  transition-delay: 500ms;
   transform: translateX(0);
 }
 
