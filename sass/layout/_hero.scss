@@ -47,7 +47,6 @@
     .hero-title {
         grid-area: title;
         color: #000;
-        margin-bottom: 0.5rem;
 
         h1 {
             text-transform: capitalize;
@@ -81,8 +80,6 @@
     .hero-cta {
         grid-area: cta;
         text-align: right;
-        background: #fafafa;
-        padding: 0.5rem;
         .cta {
             margin: 0;
             margin-left: auto;
@@ -104,12 +101,13 @@
         grid-area: image;
         overflow: hidden;
         width: 100%;
-        margin-bottom: 1rem;
-        margin-bottom: 0.5rem;
+        margin: 1rem 0;
+        // margin-bottom: 1rem;
+        // margin-bottom: 0.5rem;
 
         @include abstracts.sm {
             border-radius: 10px;
-            margin-bottom: 0;
+            margin: 0;
             // padding-inline: 5vw;
         }
 

@@ -529,7 +529,7 @@ header {
   width: 100%;
   height: 7vh;
   height: 7vh;
-  padding: 0.25rem 5vw;
+  padding: 0.5rem 5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -788,7 +788,6 @@ header.active-hero nav .mobile-links {
 .hero .hero-title {
   grid-area: title;
   color: #000;
-  margin-bottom: 0.5rem;
 }
 .hero .hero-title h1 {
   text-transform: capitalize;
@@ -817,8 +816,6 @@ header.active-hero nav .mobile-links {
 .hero .hero-cta {
   grid-area: cta;
   text-align: right;
-  background: #fafafa;
-  padding: 0.5rem;
 }
 .hero .hero-cta .cta {
   margin: 0;
@@ -838,13 +835,12 @@ header.active-hero nav .mobile-links {
   grid-area: image;
   overflow: hidden;
   width: 100%;
-  margin-bottom: 1rem;
-  margin-bottom: 0.5rem;
+  margin: 1rem 0;
 }
 @media (min-width: 576px) {
   .hero .hero-image {
     border-radius: 10px;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 .hero .hero-image img {
