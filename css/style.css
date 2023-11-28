@@ -807,7 +807,7 @@ header.active-hero nav .mobile-links {
 }
 .hero .hero-subtitle {
   grid-area: subtitle;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .hero .hero-subtitle p {
   font-weight: 400;
