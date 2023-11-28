@@ -25,6 +25,8 @@ header {
         inset: 0;
         background: #fff;
         z-index: -1;
+        box-shadow: 0 0.5rem 1rem hsla(0, 0%, 0%, 0.05);
+        transition: background 250ms, box-shadow 750ms;
     }
 
     // DESKTOP HEADER
@@ -292,6 +294,9 @@ header {
     &.active-hero {
         // $header-height: 45vh;
         height: 10vh;
+        &::after {
+            box-shadow: 0 1rem 1rem transparent;
+        }
         nav {
             .mobile-links {
                 top: 10vh;

@@ -543,6 +543,8 @@ header::after {
   inset: 0;
   background: #fff;
   z-index: -1;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  transition: background 250ms, box-shadow 750ms;
 }
 @media (min-width: 576px) {
   header {
@@ -735,6 +737,9 @@ header nav .desktop-links {
 }
 header.active-hero {
   height: 10vh;
+}
+header.active-hero::after {
+  box-shadow: 0 1rem 1rem transparent;
 }
 header.active-hero nav .mobile-links {
   top: 10vh;
