@@ -69,11 +69,14 @@
     .hero-subtitle {
         // padding-left: 5vw;
         grid-area: subtitle;
-        margin-bottom: 0.5rem;
-
+        margin-bottom: 1rem;
+        
         p {
             font-weight: 400;
             font-family: sans-serif;
+        }
+        @include abstracts.sm {
+            margin-bottom: 0;
         }
     }
 
@@ -86,13 +89,21 @@
         }
 
         // DESKTOP CTA
-        @include abstracts.md {
+        @include abstracts.lg {
             text-align: left;
             background: none;
-            padding: 0;
+            padding: 1rem;
+            border-bottom-left-radius: 0.5rem;
+            
+            // outline-color: red;
+            transform: translateY(23vh);
+            background: linear-gradient(0deg, #fff9 30%, #fff 60%);
+            background: #fff;
+
             .cta {
                 margin: 0;
             }
+
         }
 
     }
@@ -106,18 +117,17 @@
         // margin-bottom: 0.5rem;
 
         @include abstracts.sm {
-            border-radius: 10px;
+            border-radius: 0.5rem;
             margin: 0;
             // padding-inline: 5vw;
         }
 
         img {
-            // border-radius: 0.5rem;
             width: 100%;
             height: 100%;
             object-position: 100% 50%;
             object-fit: cover;
-            border-radius: 5px;
+            border-radius: 0.5rem;
             @include abstracts.sm {
                 object-position: center;
             }
