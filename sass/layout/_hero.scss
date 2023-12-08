@@ -70,10 +70,9 @@
         // padding-left: 5vw;
         grid-area: subtitle;
         margin-bottom: 0.5rem;
-        
         p {
             font-weight: 400;
-            font-family: sans-serif;
+            // font-family: sans-serif;
         }
         @include abstracts.sm {
             margin-bottom: 0;

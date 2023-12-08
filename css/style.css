@@ -816,7 +816,6 @@ header.active-hero nav .mobile-links {
 }
 .hero .hero-subtitle p {
   font-weight: 400;
-  font-family: sans-serif;
 }
 @media (min-width: 576px) {
   .hero .hero-subtitle {
