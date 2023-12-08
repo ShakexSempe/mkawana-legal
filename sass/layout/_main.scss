@@ -11,27 +11,27 @@
         .section-title {
             margin-bottom: 5vh;
             overflow: hidden;
+            position: relative;
+            width: max-content;
             
             h2 {
                 color: #000;
                 text-transform: uppercase;
                 font-size: 2rem;
                 transition: 1s;
-                position: relative;
-                width: max-content;
 
-                // UNDERLINE
-                &::after {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 2px;
-                    border-radius: 10px;
-                    background: abstracts.$brand-gold;
-                    transition: 1s;
-                }
+            }
+            // UNDERLINE
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                border-radius: 10px;
+                background: abstracts.$brand-gold;
+                transition: 1s;
             }
 
             // IO CLASS
@@ -39,22 +39,18 @@
                 
                 h2 {
 
-                    &::after {
-                    transform: translateX(-100%);
-                    }
+                    transform: translateY(-100%);
 
                 }
 
             }
+
             // ACTIVE IO CLASS
             &.active-item {
                 
                 h2 {
                     
-                    &::after {
-                        transition: 1s ease-out;
-                        transform: translateX(0);
-                    }
+                    transform: translateY(0);
 
                 }
             }
