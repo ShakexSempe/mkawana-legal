@@ -247,6 +247,13 @@ a {
   }
 }
 
+.contact {
+  background: #0d0d0d;
+  color: #fff;
+}
+.contact .section-title h2 {
+  color: #fff !important;
+}
 .contact .contact-container {
   position: relative;
   display: grid;
@@ -350,11 +357,11 @@ a {
 }
 .contact .contact-info .contact-item p a::before {
   background: linear-gradient(0deg, #5b3e0b, #e39a1c);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 .contact .contact-info .contact-item p a::after {
   background: linear-gradient(0deg, #e39a1c, #5b3e0b);
-  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.4), inset -2px -2px 2px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(255, 255, 255, 0.25);
   opacity: 0;
 }
 @media (max-width: 1024px) {
@@ -391,20 +398,21 @@ a {
 .contact .contact-form .input-box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .contact .contact-form .input-box label {
   text-transform: capitalize;
-  text-transform: uppercase;
-  transition: 0.2s;
+  font-family: "Prompt", sans-serif;
+  transition: 200ms;
   font-weight: 500;
-  font-weight: 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
 }
 .contact .contact-form .input-box input,
 .contact .contact-form .input-box textarea {
-  border-radius: 2px;
+  border-radius: 0.25rem;
   outline: none;
-  transition: 0.3s;
+  transition: 250ms;
   font-size: 0.9rem;
   padding: 0.75rem;
 }
@@ -412,7 +420,9 @@ a {
 .contact .contact-form .input-box textarea::placeholder {
   opacity: 0;
   letter-spacing: 0.1rem;
-  transition: 0.2s;
+  transition: 250ms;
+  font-family: sans-serif;
+  text-transform: capitalize;
 }
 .contact .contact-form .input-box input:focus, .contact .contact-form .input-box input:hover,
 .contact .contact-form .input-box textarea:focus,
@@ -454,6 +464,7 @@ a {
   width: 60%;
   border: none;
   padding: 0.85rem 1rem;
+  font-family: "Prompt", sans-serif;
 }
 .contact .contact-form .cta:hover .icon, .contact .contact-form .cta:focus .icon {
   transform: rotate(30deg);
@@ -1121,7 +1132,7 @@ header.active-hero nav .mobile-links {
   text-decoration: none;
   border-radius: 0.5rem;
   cursor: default;
-  transition: 20ms;
+  transition: 250ms;
   position: relative;
   letter-spacing: 0.05rem;
 }
@@ -1141,11 +1152,11 @@ header.active-hero nav .mobile-links {
 }
 .cta::before {
   background: linear-gradient(0deg, #5b3e0b, #e39a1c);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 .cta::after {
   background: linear-gradient(0deg, #e39a1c, #5b3e0b);
-  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.4), inset -2px -2px 2px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(255, 255, 255, 0.25);
   opacity: 0;
 }
 @media (min-width: 820px) {
