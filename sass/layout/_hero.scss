@@ -14,8 +14,6 @@
     display: grid;
     grid-template-areas: 'image' 'title' 'cta';
     grid-template-areas: 'title' 'image' 'cta';
-    grid-template-rows: 1fr auto auto;
-    grid-template-rows: auto 50% auto;
     grid-template-rows: auto 1fr auto;
     
     @include abstracts.sm {
@@ -66,22 +64,13 @@
         }
     }
 
-    .hero-subtitle {
-        // padding-left: 5vw;
-        grid-area: subtitle;
-        margin-bottom: 0.5rem;
-        p {
-            font-weight: 400;
-            // font-family: sans-serif;
-        }
-        @include abstracts.sm {
-            margin-bottom: 0;
-        }
-    }
-
     .hero-cta {
+
         grid-area: cta;
         text-align: right;
+        background: linear-gradient(90deg, #fff 30%, #f4f4f4 60%);
+        padding: 0.25rem;
+
         .cta {
             margin: 0;
             margin-left: auto;
@@ -96,7 +85,6 @@
             
             // outline-color: red;
             transform: translateY(23vh);
-            background: linear-gradient(0deg, #fff9 30%, #fff 60%);
             background: #fff;
 
             .cta {
@@ -106,6 +94,21 @@
         }
 
     }
+
+    .hero-subtitle {
+        // padding-left: 5vw;
+        grid-area: subtitle;
+        margin-bottom: 0.5rem;
+        p {
+            font-weight: 400;
+            // font-family: sans-serif;
+        }
+        @include abstracts.sm {
+            margin-bottom: 0;
+        }
+    }
+
+    
 
     .hero-image {
         grid-area: image;

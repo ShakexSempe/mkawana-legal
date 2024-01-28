@@ -771,8 +771,6 @@ header.active-hero nav .mobile-links {
   display: grid;
   grid-template-areas: "image" "title" "cta";
   grid-template-areas: "title" "image" "cta";
-  grid-template-rows: 1fr auto auto;
-  grid-template-rows: auto 50% auto;
   grid-template-rows: auto 1fr auto;
 }
 @media (min-width: 576px) {
@@ -821,21 +819,11 @@ header.active-hero nav .mobile-links {
     margin-bottom: 0;
   }
 }
-.hero .hero-subtitle {
-  grid-area: subtitle;
-  margin-bottom: 0.5rem;
-}
-.hero .hero-subtitle p {
-  font-weight: 400;
-}
-@media (min-width: 576px) {
-  .hero .hero-subtitle {
-    margin-bottom: 0;
-  }
-}
 .hero .hero-cta {
   grid-area: cta;
   text-align: right;
+  background: linear-gradient(90deg, #fff 30%, #f4f4f4 60%);
+  padding: 0.25rem;
 }
 .hero .hero-cta .cta {
   margin: 0;
@@ -848,11 +836,22 @@ header.active-hero nav .mobile-links {
     padding: 1rem;
     border-bottom-left-radius: 0.5rem;
     transform: translateY(23vh);
-    background: linear-gradient(0deg, #fff9 30%, #fff 60%);
     background: #fff;
   }
   .hero .hero-cta .cta {
     margin: 0;
+  }
+}
+.hero .hero-subtitle {
+  grid-area: subtitle;
+  margin-bottom: 0.5rem;
+}
+.hero .hero-subtitle p {
+  font-weight: 400;
+}
+@media (min-width: 576px) {
+  .hero .hero-subtitle {
+    margin-bottom: 0;
   }
 }
 .hero .hero-image {
